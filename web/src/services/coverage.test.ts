@@ -43,8 +43,8 @@ describe('dataset coverage', () => {
    * batch*, as the per-category pins below are updated — never by relaxing
    * it back to an inequality.
    */
-  it('ships 526 entries, the number the BIOS reports', () => {
-    expect(all.length).toBe(526);
+  it('ships 614 entries, the number the BIOS reports', () => {
+    expect(all.length).toBe(614);
   });
 
   it('gives every entry an id, a name and a category', () => {
@@ -74,9 +74,17 @@ describe('dataset coverage', () => {
     // Re-pinned again for iOS 0.7.9 (G): sommbot's P1/P2 batch, +6 grapes
     // (Sercial, Boal, Malvasia de Sao Jorge, Gouais Blanc, Plavac Mali, Manto
     // Negro) and +2 styles (Madeira, Cava). Regions and flavours unchanged.
-    expect(countIn('GRAPES')).toBe(177);
-    expect(countIn('REGIONS')).toBe(124);
-    expect(countIn('STYLES')).toBe(33);
+    // Re-pinned 2026-09-09 for the iOS 0.9.44-0.9.53 catch-up, ten releases at
+    // once: +44 grapes (Turkey's Okuzgozu/Bogazkere/Narince/Emir, the
+    // Greece/Portugal/Armenia/Cyprus batches, the Marquette/Chambourcin
+    // hybrids), +33 regions (Cappadocia, Elazig, Styria, Cotnari, Jurancon,
+    // the Moldova/Armenia/Cyprus sets), +6 styles (S035-S040: Vin Jaune,
+    // Tokaji Aszu, Retsina, Passito, Marsala, Commandaria) on top of Madeira
+    // and Cava, which were restored after 0.9.42 deleted them. Flavours stay
+    // at 106 again -- every new note came from the existing vocabulary.
+    expect(countIn('GRAPES')).toBe(221);
+    expect(countIn('REGIONS')).toBe(157);
+    expect(countIn('STYLES')).toBe(40);
     expect(countIn('CONTINENTS')).toBe(6);
     expect(countIn('FLAVORS')).toBe(106);
   });
@@ -87,23 +95,23 @@ describe('dataset coverage', () => {
    * It was the one category with no count at all, which is precisely the one
    * that most needed it: the gates are the whole of the web's divergence from
    * iOS's total, so an unpinned COUNTRY_GATE meant the divergence itself was
-   * unobserved. 526 - 446 = 80 is now checked from both ends.
+   * unobserved. 614 - 530 = 84 is now checked from both ends.
    */
-  it('ships the 80 country gates iOS filters out', () => {
-    expect(countIn('COUNTRY_GATE')).toBe(80);
+  it('ships the 84 country gates iOS filters out', () => {
+    expect(countIn('COUNTRY_GATE')).toBe(84);
     const shared =
       countIn('GRAPES') + countIn('REGIONS') + countIn('STYLES') + countIn('FLAVORS') + countIn('CONTINENTS');
     expect(shared + countIn('COUNTRY_GATE')).toBe(all.length);
   });
 
   /**
-   * The five categories iOS counts must still total its 446 — the number the
+   * The five categories iOS counts must still total its 530 — the number the
    * DATA panel shows on both platforms.
    */
-  it('totals the same 446 entries iOS reports', () => {
+  it('totals the same 530 entries iOS reports', () => {
     const shared =
       countIn('GRAPES') + countIn('REGIONS') + countIn('STYLES') + countIn('FLAVORS') + countIn('CONTINENTS');
-    expect(shared).toBe(446);
+    expect(shared).toBe(530);
   });
 
   it('accounts for every entry in a known category', () => {
@@ -112,11 +120,11 @@ describe('dataset coverage', () => {
     expect(unaccounted.map(e => `${e.id}:${e.category}`)).toEqual([]);
   });
 
-  it('draws regions from the twenty-six countries iOS counts', () => {
+  it('draws regions from the thirty-four countries iOS counts', () => {
     const origins = new Set(
       all.filter(isRegionEntry).map(e => e.details.origin).filter((o): o is string => !!o),
     );
-    expect(origins.size).toBe(26);
+    expect(origins.size).toBe(34);
   });
 
   /** All four rarity tiers must be represented, or a UI state goes untested. */
@@ -148,11 +156,11 @@ describe('dataset coverage', () => {
         .filter(isGrapeEntry)
         .reduce((sum, g) => sum + (g.tastingProfile?.length ?? 0), 0);
       // Pinned, not merely non-zero (W18). The *relationship* is the point of
-      // the test — 106 distinct flavours standing for 528 note instances — and
+      // the test — 106 distinct flavours standing for 660 note instances — and
       // a bound of "more than nothing" would hold if the grapes lost every
       // tasting profile they have.
       expect(flavors.length).toBe(106);
-      expect(noteInstances).toBe(528);
+      expect(noteInstances).toBe(660);
       expect(flavors.length).toBeLessThan(noteInstances);
     });
 
@@ -240,7 +248,7 @@ describe('dataset coverage', () => {
    */
   it('gives the authored bars a real spread, not a formula', () => {
     const grapes = all.filter(isGrapeEntry);
-    expect(grapes.length).toBe(177);
+    expect(grapes.length).toBe(221);
 
     for (const bar of ['colorIntensity', 'aromatics'] as const) {
       const values = grapes.map(g => g.grapeCharacteristics[bar]);
@@ -311,7 +319,14 @@ describe('dataset coverage', () => {
       .filter(g => g.grapeCharacteristics.tannin > 0)
       .map(g => g.name)
       .sort();
-    expect(tannic).toEqual(['Kisi', 'Mtsvane', 'Rkatsiteli']);
+    // Mavrodaphne (G191) is the fourth only because of an upstream data
+    // bug, NOT because it is amber: its card says type 'white' while its
+    // style is "Fortified Wine", its tannin is 4, and its own description
+    // calls it "the dark laurel of the Peloponnese" and "a firm, peppery
+    // red". Mavro- is Greek for black. Reported to the shared master
+    // 2026-09-09 rather than patched here; when the type is corrected to
+    // red, take it back off this list and the count returns to three.
+    expect(tannic).toEqual(['Kisi', 'Mavrodaphne', 'Mtsvane', 'Rkatsiteli']);
   });
 
   /**
@@ -338,9 +353,9 @@ describe('dataset coverage', () => {
     const origins = [
       ...new Set(all.filter(isRegionEntry).map(e => e.details.origin).filter((o): o is string => !!o)),
     ].sort();
-    // The same 26 the pin above counts, so this test cannot pass vacuously
+    // The same 34 the pin above counts, so this test cannot pass vacuously
     // on an empty origin set (W18).
-    expect(origins.length).toBe(26);
+    expect(origins.length).toBe(34);
 
     const missing = origins.filter(origin => {
       const gate = all.find(e => e.category === 'COUNTRY_GATE' && e.name === origin);

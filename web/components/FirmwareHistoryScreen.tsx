@@ -104,6 +104,15 @@ const FirmwareHistoryScreen: React.FC<FirmwareHistoryScreenProps> = ({ onBack, o
                 </div>
               );
             })}
+
+            {/* The R74n credit, where iOS's FIRMWARE screen carries it
+                (2026-09-09). Their licence asks for credit "somewhere" in
+                exchange for the permission that let the flags come back; a
+                dex user who never opens the studio site finds it here. The
+                site's PRIVACY + TERMS page carries the same line. */}
+            <p className="text-caption text-[var(--lcd-subtext)] normal-case text-center leading-relaxed pt-1 pb-2">
+              Pixel flags by R74n (r74n.com), used with permission.
+            </p>
           </>
         )}
       </div>

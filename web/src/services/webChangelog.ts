@@ -68,6 +68,20 @@ export interface WebRelease {
 // 0.6.1x, not 0.6.2: the firmware line owns 0.6.2 through 0.9.2, and the
 // two-clocks test refuses any version the device already wore.
 const CURRENT: WebRelease = {
+  version: '0.6.61',
+  date: '2026-09-09',
+  headline: 'EIGHTY-FOUR MORE',
+  notes: [
+    'The catalogue catches up with the phone, ten of its releases at once: 530 entries now, up from 446. Forty-four new grapes - Turkey\'s Okuzgozu, Bogazkere, Narince and Emir, batches from Greece, Portugal, Armenia and Cyprus, and the cold-hardy hybrids Marquette and Chambourcin.',
+    'Thirty-three new regions, four new countries. Turkey, Moldova, Armenia and Cyprus have pages, flags and rosters; Cappadocia is filed honestly as a Traditional Region, because it is not a registered appellation.',
+    'Eight new styles: Vin Jaune, Tokaji Aszu, Retsina, Passito, Marsala, Commandaria and Vinho Verde - and Madeira and Cava are back, restored after a data pass had dropped them.',
+    'Every one of the 106 flavour pages is written by hand now, where most were once filled in from a template.',
+    'And the pixel flags are R74n\'s again, with the collective\'s permission and their credit on the FIRMWARE screen. The drawn set stays in the repo, ready if that ever changes.',
+  ],
+};
+
+/** The release before this one, promoted when 0.6.61 landed. */
+const PREVIOUS_0_6_60: WebRelease = {
   version: '0.6.60',
   date: '2026-08-31',
   headline: 'THE HONEST VIEWPORT',
@@ -740,6 +754,7 @@ const PREVIOUS_0_4_2: WebRelease = {
 
 /** Newest first. A new release is prepended by promoting `CURRENT`. */
 const PREVIOUS: WebRelease[] = [
+  PREVIOUS_0_6_60,
   PREVIOUS_0_6_59,
   PREVIOUS_0_6_58,
   PREVIOUS_0_6_57,

@@ -872,5 +872,24 @@ export const PrivacyAndTerms: React.FC<{ onBack: () => void; onHome: () => void 
         version history in the app says what changed and when.
       </p>
     </section>
+
+    <section className="space-y-3">
+      <h2 className="font-retro text-heading uppercase tracking-widest text-[var(--lcd-accent)]">
+        Credits
+      </h2>
+      <p>
+        Pixel flags by R74n (
+        <a
+          href="https://r74n.com"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="underline underline-offset-4 text-[var(--lcd-accent)] hover:text-[var(--lcd-text)]"
+        >
+          r74n.com
+        </a>
+        ), used with their permission. Everything else you see on the device we drew
+        ourselves.
+      </p>
+    </section>
   </InfoPage>
 );

@@ -59,14 +59,18 @@ describe('appellationName', () => {
    * region in a new country should fail here first.
    *
    * Prädikatswein is the documented exception in the Swift case: it is already
-   * the spelled-out name, so it has nothing to expand to.
+   * the spelled-out name, so it has nothing to expand to. 'Traditional Region'
+   * joined it with Turkey's Cappadocia (2026-09-09): the data says so on
+   * purpose, because Cappadocia is NOT a registered GI, and the phrase is its
+   * own expansion. Both are self-describing, which is the test of this list --
+   * a real abbreviation must still be mapped.
    */
   it('gives every region in the dataset a spelled-out system', () => {
     const unmapped = all
       .filter(isRegionEntry)
       .filter(r => {
         const short = (r.details.classification || '').trim();
-        if (!short || short === 'Prädikatswein') return false;
+        if (!short || short === 'Prädikatswein' || short === 'Traditional Region') return false;
         return !hasAppellationName(short, r.details.origin || '');
       })
       .map(r => `${r.name}: '${r.details.classification}' (${r.details.origin})`);

@@ -1,5 +1,5 @@
 {
- "digest": "eda84ef6a57988b318483d3ec1659e1a8f03efd68e29eb0c617e9c8fe3a7cb43",
+ "digest": "1f9118bf7a765667df0975e2ee32c9501e24401b4f2214c81bc2e29c246495fe",
  "cards": [
   {
    "id": "G001",
@@ -2126,6 +2126,534 @@
    "blurb": "Mallorca's principal red and the island's own, pale in the glass and low in acid, built for drinking young rather than keeping."
   },
   {
+   "id": "G179",
+   "name": "Mavrud",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-full-rare.png",
+   "artKind": "sprite",
+   "blurb": "Bulgaria’s great native red, at home around Asenovgrad on the warm Thracian plain: late-ripening, thick-skinned, and dark enough that its na"
+  },
+  {
+   "id": "G180",
+   "name": "Melnik",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Shorthand for Shiroka Melnishka Loza — Broad-Leaved Melnik — grown in the hot Struma corridor and effectively nowhere else on earth."
+  },
+  {
+   "id": "G181",
+   "name": "Obaideh",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Lebanon’s ancient white, grown own-rooted on the Bekaa and Batroun heights and spent most of its history being distilled into arak."
+  },
+  {
+   "id": "G182",
+   "name": "Merwah",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "The other half of Lebanon’s white story, hanging on in high Mount Lebanon vineyards above Batroun where some ungrafted vines are counted in"
+  },
+  {
+   "id": "G183",
+   "name": "Zelen",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "Named for the green glint it leaves in the glass and grown only in the upper Vipava Valley, where Valvasor’s chronicle already recorded it in 1689."
+  },
+  {
+   "id": "G184",
+   "name": "Pinela",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "Vipava’s other endemic white, documented in the valley back to the fourteenth century and now down to a few dozen hectares of delicate, apple-and-blossom wine."
+  },
+  {
+   "id": "G185",
+   "name": "Chasselas",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "The world’s most transparent grape: neutral almost to a fault, which is precisely the point — in Swiss hands it transmits the exact terrace"
+  },
+  {
+   "id": "G186",
+   "name": "Malvazija Istarska",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Istria’s white and most of its vineyard: apricot and almond over a saline Adriatic finish, taken fresh off steel or amber off skins dependin"
+  },
+  {
+   "id": "G187",
+   "name": "Teran",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "The iron-edged red of the terra rossa: sour cherry, game and graphite over acidity that takes no prisoners."
+  },
+  {
+   "id": "G188",
+   "name": "Fetească Regală",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Romania’s royal white, spotted in a Transylvanian nursery around 1920 and named for the crown in 1928."
+  },
+  {
+   "id": "G189",
+   "name": "Savatiano",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "The most planted grape in Greece and the workhorse of Attica, so drought-hardy it shrugs off the driest summers in the country."
+  },
+  {
+   "id": "G190",
+   "name": "Malagousia",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-full-rare.png",
+   "artKind": "sprite",
+   "blurb": "A grape that nearly vanished: down to a few vines in the 1970s when a professor at Thessaloniki and the winemakers of Porto Carras coaxed it back."
+  },
+  {
+   "id": "G191",
+   "name": "Mavrodaphne",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-full-rare.png",
+   "artKind": "sprite",
+   "blurb": "The dark laurel of the Peloponnese, best known fortified: sweet Mavrodaphne of Patras ages for years in old casks toward coffee, fig and bitter chocolate."
+  },
+  {
+   "id": "G192",
+   "name": "Encruzado",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-full-rare.png",
+   "artKind": "sprite",
+   "blurb": "The great white of the Dão, grown almost nowhere else, and Portugal’s strongest answer to white Burgundy."
+  },
+  {
+   "id": "G193",
+   "name": "Fernão Pires",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Portugal’s most planted white grape, filling the warm river plains of the Tejo and, as Maria Gomes, leading Bairrada’s still and sparkling whites."
+  },
+  {
+   "id": "G194",
+   "name": "Altesse",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Savoie’s noblest white, sold as Roussette de Savoie and named for the russet blush its ripe berries take on."
+  },
+  {
+   "id": "G195",
+   "name": "Petite Arvine",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "The flagship native of the Valais, clinging to terraces above the young Rhône and found almost nowhere outside Switzerland."
+  },
+  {
+   "id": "G196",
+   "name": "Kadarka",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "The old red of the Pannonian lands, once the backbone of Eger’s Bikáver and still Bulgaria’s Gamza."
+  },
+  {
+   "id": "G197",
+   "name": "Welschriesling",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "No relation to Riesling despite the name: the everyday white of the middle Danube, grown as Graševina in Croatia, where it is the most plant"
+  },
+  {
+   "id": "G198",
+   "name": "Dornfelder",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Germany’s modern red success: bred by August Herold at Weinsberg in 1955 and now the country’s second most planted dark grape."
+  },
+  {
+   "id": "G199",
+   "name": "Scheurebe",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Georg Scheu’s 1916 crossing from Alzey, grown in Rheinhessen and the Pfalz and prized where Riesling structure meets blackcurrant-and-grapefruit exuberance."
+  },
+  {
+   "id": "G200",
+   "name": "Bacchus",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "A Geilweilerhof crossing of 1933 that found its true home seventy years later on the chalk and clay of southern England, where it has become"
+  },
+  {
+   "id": "G201",
+   "name": "Areni",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Armenia’s ancient flagship red, grown around the village that named it in Vayots Dzor, where the Areni-1 cave preserves a complete winery so"
+  },
+  {
+   "id": "G202",
+   "name": "Voskehat",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Armenia’s leading white, its name meaning golden berry, grown at altitude on the volcanic slopes of Aragatsotn and long the base of the country’s amphora whites."
+  },
+  {
+   "id": "G203",
+   "name": "Fetească Albă",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "The old maiden grape of Moldavia, grown on both banks of the Prut for centuries and mother of the younger Fetească Regală."
+  },
+  {
+   "id": "G204",
+   "name": "Fetească Neagră",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Romania’s great native red, documented for centuries around Uricani in Moldavia and revived from near-extinction after the phylloxera and Soviet eras."
+  },
+  {
+   "id": "G205",
+   "name": "Xynisteri",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "Cyprus’s dominant white, grown ungrafted on an island phylloxera never reached, and half of every true Commandaria."
+  },
+  {
+   "id": "G206",
+   "name": "Mavro",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "The black grape of Cyprus, so long the island’s default that its name is simply the Greek for black."
+  },
+  {
+   "id": "G207",
+   "name": "Gaglioppo",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Calabria’s standard-bearer and the grape of Cirò, grown on the coastal shelf where Greek settlers planted some of Italy’s first vines."
+  },
+  {
+   "id": "G208",
+   "name": "Nosiola",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "Trentino’s only native white, named for the hazelnut its wines taste of, grown between the Dolomites and Lake Garda."
+  },
+  {
+   "id": "G209",
+   "name": "Marquette",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "A French-American hybrid, not a vinifera: bred at the University of Minnesota and released in 2006 to survive winters that kill European vines outright."
+  },
+  {
+   "id": "G210",
+   "name": "Chambourcin",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "A French-American hybrid from Joannès Seyve's nursery on the Loire, released in 1963 and now more at home abroad than in France: the eastern"
+  },
+  {
+   "id": "G211",
+   "name": "Roditis",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "The pink-skinned workhorse of the Peloponnese, named for the rose blush its berries take on and planted across more of Greece than anything but Savatiano."
+  },
+  {
+   "id": "G212",
+   "name": "Limnio",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "A red with a written record longer than almost any other: Aristotle praised the Limnia vine of Lemnos, and the island still grows it beside"
+  },
+  {
+   "id": "G213",
+   "name": "Maratheftiko",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Cyprus's aristocrat in hiding: scattered through old mixed vineyards because its flowers are functionally female and need another vine to se"
+  },
+  {
+   "id": "G214",
+   "name": "Rară Neagră",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "Moldova's own native red, the third leg of the Purcari story beside Cabernet and Saperavi: pale, fresh and peppery in the Pinot register rat"
+  },
+  {
+   "id": "G215",
+   "name": "Erbaluce",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "Caluso's one grape and three wines: taut, alpine-dry whites, traditional-method sparkling, and a passito that dries on racks until spring."
+  },
+  {
+   "id": "G216",
+   "name": "Verdeca",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "The white of Puglia's trulli country, filling the high Itria Valley between Locorotondo and Martina Franca with light, green-tinged wine tha"
+  },
+  {
+   "id": "G217",
+   "name": "Pallagrello Bianco",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "The white the Bourbon kings fenced for themselves: Ferdinand IV planted it in his fan-shaped Vigna del Ventaglio at San Leucio, and two cent"
+  },
+  {
+   "id": "G218",
+   "name": "Petit Manseng",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/gold-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Jurançon's great small-berried white, left hanging into November until the mountain foehn has shrivelled every berry — passerillage, concent"
+  },
+  {
+   "id": "G219",
+   "name": "Öküzgözü",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Anatolia's brightest red, named ox eye for its big round black berries and grown above the Euphrates around Elazığ."
+  },
+  {
+   "id": "G220",
+   "name": "Boğazkere",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/red-full-rare.png",
+   "artKind": "sprite",
+   "blurb": "The throat burner — the name is a fair warning."
+  },
+  {
+   "id": "G221",
+   "name": "Narince",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-medium-rare.png",
+   "artKind": "sprite",
+   "blurb": "Turkey's finest native white, from the Yeşilırmak valley around Tokat, where the same vineyards are cropped twice — grapes for the press, yo"
+  },
+  {
+   "id": "G222",
+   "name": "Emir",
+   "category": "GRAPES",
+   "livery": {
+    "solid": "#7937bd",
+    "deep": "#492988"
+   },
+   "art": "/art/grape/green-light-rare.png",
+   "artKind": "sprite",
+   "blurb": "Cappadocia's own white, rooted ungrafted in the volcanic tuff the region carves its cellars from, at a thousand metres where fierce days fall into cold nights."
+  },
+  {
    "id": "R001",
    "name": "Bordeaux",
    "category": "REGIONS",
@@ -3614,6 +4142,402 @@
    "blurb": "Chile’s oldest vineyard land, planted from 1551 and then left alone for four centuries — dry-farmed bush País and century-old Cinsault on gr"
   },
   {
+   "id": "R125",
+   "name": "Thracian Lowlands",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/button/regions.png",
+   "artKind": "menu",
+   "blurb": "Bulgaria’s warm southern plain around Plovdiv, where Mavrud — late, dark and stubbornly local — never left through the bulk-wine decades."
+  },
+  {
+   "id": "R126",
+   "name": "Struma Valley",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/button/regions.png",
+   "artKind": "menu",
+   "blurb": "A narrow Mediterranean corridor up the Struma river in Bulgaria’s far southwest, hotter than anywhere else in the country."
+  },
+  {
+   "id": "R127",
+   "name": "Bekaa Valley",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-lebanon.png",
+   "artKind": "outline",
+   "blurb": "A high plateau between two Lebanese mountain ranges that has grown vines for five thousand years, at altitudes that turn relentless sun into fresh wine."
+  },
+  {
+   "id": "R128",
+   "name": "Batroun",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-lebanon.png",
+   "artKind": "outline",
+   "blurb": "Lebanon’s coastal counterpoint to the Bekaa, where small wineries climb from the Mediterranean into terraced limestone hills."
+  },
+  {
+   "id": "R129",
+   "name": "Goriška Brda",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-slovenia.png",
+   "artKind": "outline",
+   "blurb": "Slovenia’s share of the hills it splits with Italian Collio, where Rebula — Ribolla Gialla with a Slovene passport — headlines and weeks on"
+  },
+  {
+   "id": "R130",
+   "name": "Vipava Valley",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-slovenia.png",
+   "artKind": "outline",
+   "blurb": "A valley scoured by the bora wind, which tears down from the Alps hard enough to shape how vines are trained."
+  },
+  {
+   "id": "R131",
+   "name": "Sussex",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-united-kingdom.png",
+   "artKind": "outline",
+   "blurb": "The chalk of the South Downs is the same seam that surfaces in Champagne, and English traditional-method sparkling has been beating Champagn"
+  },
+  {
+   "id": "R132",
+   "name": "Kent",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-united-kingdom.png",
+   "artKind": "outline",
+   "blurb": "The Garden of England, where warming summers have turned hop gardens and orchards into the country’s largest vineyards."
+  },
+  {
+   "id": "R133",
+   "name": "Villány",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-hungary.png",
+   "artKind": "outline",
+   "blurb": "Hungary’s warmest corner, on south-facing slopes near the Croatian border, where Cabernet Franc found a second home so convincing the region"
+  },
+  {
+   "id": "R134",
+   "name": "Istria",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-croatia.png",
+   "artKind": "outline",
+   "blurb": "A heart-shaped peninsula that remembers Venice, where white Malvazija Istarska carries the coast and Teran’s iron-edged reds come off terra rossa soil."
+  },
+  {
+   "id": "R135",
+   "name": "Târnave",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-romania.png",
+   "artKind": "outline",
+   "blurb": "Transylvania’s high plateau between two rivers, cooler than anywhere else in Romanian wine and kept for aromatic whites."
+  },
+  {
+   "id": "R136",
+   "name": "Lavaux",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-switzerland.png",
+   "artKind": "outline",
+   "blurb": "Eleven kilometres of terraces stacked between Lake Geneva and the sky, built by monks eight centuries ago and now UNESCO-listed."
+  },
+  {
+   "id": "R137",
+   "name": "Maldonado",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-uruguay.png",
+   "artKind": "outline",
+   "blurb": "Uruguay’s Atlantic edge, where granite hills and sea wind are pulling the country’s wine story east of its Tannat heartland."
+  },
+  {
+   "id": "R138",
+   "name": "Zenata",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-morocco.png",
+   "artKind": "outline",
+   "blurb": "Morocco’s Atlantic coastal strip north of Casablanca, kept fresh by ocean fog rolling over low hills."
+  },
+  {
+   "id": "R139",
+   "name": "Parras Valley",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-mexico.png",
+   "artKind": "outline",
+   "blurb": "A high-desert oasis in Coahuila where Casa Madero has made wine since 1597 — the oldest winery in the Americas, two centuries ahead of anything in California."
+  },
+  {
+   "id": "R140",
+   "name": "Attica",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-greece.png",
+   "artKind": "outline",
+   "blurb": "The dry, bright plain around Athens, the largest vineyard of Greece and the historic home of Retsina."
+  },
+  {
+   "id": "R141",
+   "name": "Eger",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-hungary.png",
+   "artKind": "outline",
+   "blurb": "Northern Hungary’s red-wine hill town, famous for Bikáver, the Bull’s Blood blend that legend says fortified its defenders in 1552."
+  },
+  {
+   "id": "R142",
+   "name": "Slavonia",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-croatia.png",
+   "artKind": "outline",
+   "blurb": "Croatia’s inland granary between the Drava and Sava rivers, where Graševina fills the largest share of the national vineyard and the oak for"
+  },
+  {
+   "id": "R143",
+   "name": "Pfalz",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-germany.png",
+   "artKind": "outline",
+   "blurb": "Germany’s sunniest large region, a northern continuation of Alsace where almond trees line the wine road and dry Riesling meets the country’"
+  },
+  {
+   "id": "R144",
+   "name": "Hawke's Bay",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-new-zealand.png",
+   "artKind": "outline",
+   "blurb": "New Zealand’s oldest wine region and its warmest serious one, curved around the sunniest bay of the North Island."
+  },
+  {
+   "id": "R145",
+   "name": "Casablanca Valley",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-chile.png",
+   "artKind": "outline",
+   "blurb": "The valley that taught Chile to grow cool: morning fog rolls in from the Pacific twenty kilometres away, stretching the season for Sauvignon"
+  },
+  {
+   "id": "R146",
+   "name": "Patagonia",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-argentina.png",
+   "artKind": "outline",
+   "blurb": "The southern limit of Argentine wine, down the Río Negro and Neuquén valleys where desert wind thickens skins and cool nights preserve nerve."
+  },
+  {
+   "id": "R147",
+   "name": "Codru",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/button/regions.png",
+   "artKind": "menu",
+   "blurb": "Moldova’s central hills, where oak forests break the steppe wind and most of the country’s vast vineyard grows."
+  },
+  {
+   "id": "R148",
+   "name": "Ștefan Vodă",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/button/regions.png",
+   "artKind": "menu",
+   "blurb": "Moldova’s southeastern corner above the Dniester, home of Purcari, whose dark Negru blend won gold in Paris in 1878 and stocked the cellars"
+  },
+  {
+   "id": "R149",
+   "name": "Vayots Dzor",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/button/regions.png",
+   "artKind": "menu",
+   "blurb": "A high mountain province of southern Armenia where vines grow ungrafted at 1,400 metres or more between volcanic outcrops and limestone gorges."
+  },
+  {
+   "id": "R150",
+   "name": "Aragatsotn",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/button/regions.png",
+   "artKind": "menu",
+   "blurb": "The volcanic apron of Mount Aragats northwest of Yerevan, dry, sun-hammered and irrigated from mountain snowmelt since Urartian times."
+  },
+  {
+   "id": "R151",
+   "name": "Commandaria",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/button/regions.png",
+   "artKind": "menu",
+   "blurb": "Fourteen villages on the south slopes of the Troodos, delimited for a single wine: the sun-dried amber sweet the Crusaders named for their commandery at Kolossi."
+  },
+  {
+   "id": "R152",
+   "name": "Pitsilia",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/button/regions.png",
+   "artKind": "menu",
+   "blurb": "Cyprus’s highest vineyards, terraced up the Troodos to 1,400 metres on an island phylloxera never reached."
+  },
+  {
+   "id": "R153",
+   "name": "Styria",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-austria.png",
+   "artKind": "outline",
+   "blurb": "Austria's green southeast, where vineyards climb hills steep enough to need winches and Sauvignon Blanc found a second homeland."
+  },
+  {
+   "id": "R154",
+   "name": "Cotnari",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-romania.png",
+   "artKind": "outline",
+   "blurb": "Romania's most storied vineyard, on limestone hills in the country's northeast, where autumn mists have made golden botrytis sweets since th"
+  },
+  {
+   "id": "R155",
+   "name": "Jurançon",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/class/outline-france.png",
+   "artKind": "outline",
+   "blurb": "Pyrenean foothill terraces above Pau, delimited in 1936 among France's first AOCs and famous since a Manseng sweet was poured at Henri IV's baptism."
+  },
+  {
+   "id": "R156",
+   "name": "Cappadocia",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/button/regions.png",
+   "artKind": "menu",
+   "blurb": "A thousand-metre plateau of carved tuff where vineyards grow between fairy chimneys and wineries age their bottles in caves cut by hand."
+  },
+  {
+   "id": "R157",
+   "name": "Elazığ",
+   "category": "REGIONS",
+   "livery": {
+    "solid": "#2f7d46",
+    "deep": "#194829"
+   },
+   "art": "/art/button/regions.png",
+   "artKind": "menu",
+   "blurb": "High terraces above the dammed Euphrates in eastern Anatolia, the home vineyard of Öküzgözü and the upstream half of Turkey's classic red blend."
+  },
+  {
    "id": "S001",
    "name": "Full-Body Red",
    "category": "STYLES",
@@ -4010,6 +4934,90 @@
    "blurb": "Spain's traditional-method sparkling wine, its second fermentation in the bottle and its heartland Penedès, built from the Catalan trio of M"
   },
   {
+   "id": "S035",
+   "name": "Vin Jaune",
+   "category": "STYLES",
+   "livery": {
+    "solid": "#b74d2a",
+    "deep": "#75341f"
+   },
+   "art": "/art/button/styles.png",
+   "artKind": "menu",
+   "blurb": "The Jura’s yellow wine: Savagnin aged at least six years and three months under a veil of yeast in barrels never topped up, then bottled in"
+  },
+  {
+   "id": "S036",
+   "name": "Tokaji Aszú",
+   "category": "STYLES",
+   "livery": {
+    "solid": "#b74d2a",
+    "deep": "#75341f"
+   },
+   "art": "/art/button/styles.png",
+   "artKind": "menu",
+   "blurb": "Hungary’s wine of kings: botrytis-shrivelled aszú berries picked one by one and steeped in base wine from the Tokaj hills, then aged in cell"
+  },
+  {
+   "id": "S037",
+   "name": "Retsina",
+   "category": "STYLES",
+   "livery": {
+    "solid": "#b74d2a",
+    "deep": "#75341f"
+   },
+   "art": "/art/button/styles.png",
+   "artKind": "menu",
+   "blurb": "Greece’s resinated white, made by adding Aleppo pine resin to the fermenting must, a habit descended from the resin-sealed amphorae of antiq"
+  },
+  {
+   "id": "S038",
+   "name": "Passito",
+   "category": "STYLES",
+   "livery": {
+    "solid": "#b74d2a",
+    "deep": "#75341f"
+   },
+   "art": "/art/button/styles.png",
+   "artKind": "menu",
+   "blurb": "Wines from grapes dried on mats, racks or rafters until the sugar concentrates, an Italian craft older than Rome."
+  },
+  {
+   "id": "S039",
+   "name": "Marsala",
+   "category": "STYLES",
+   "livery": {
+    "solid": "#b74d2a",
+    "deep": "#75341f"
+   },
+   "art": "/art/button/styles.png",
+   "artKind": "menu",
+   "blurb": "Sicily’s great fortified wine, born in 1773 when an English trader dosed a shipment with spirit to survive the voyage."
+  },
+  {
+   "id": "S040",
+   "name": "Commandaria",
+   "category": "STYLES",
+   "livery": {
+    "solid": "#b74d2a",
+    "deep": "#75341f"
+   },
+   "art": "/art/button/styles.png",
+   "artKind": "menu",
+   "blurb": "The oldest named wine still made: sun-dried Xynisteri and Mavro from fourteen villages on the Troodos foothills, aged for years in old casks"
+  },
+  {
+   "id": "S041",
+   "name": "Vinho Verde",
+   "category": "STYLES",
+   "livery": {
+    "solid": "#b74d2a",
+    "deep": "#75341f"
+   },
+   "art": "/art/button/styles.png",
+   "artKind": "menu",
+   "blurb": "Portugal’s green wine is green as in young, not in colour: bottled months off the vine from the rainy Minho, light in alcohol, sharp with ac"
+  },
+  {
    "id": "FLAVOR-BLACKCURRANT",
    "name": "Blackcurrant",
    "category": "FLAVORS",
@@ -4019,7 +5027,7 @@
    },
    "art": "/art/flavor/blackcurrant.png",
    "artKind": "sprite",
-   "blurb": "Blackcurrant is a berry note in the sweet family."
+   "blurb": "Blackcurrant, also called cassis, is the small tart black berry of the currant bush, darker and more pungent than blackberry."
   },
   {
    "id": "FLAVOR-CEDAR",
@@ -4031,7 +5039,7 @@
    },
    "art": "/art/flavor/cedar.png",
    "artKind": "sprite",
-   "blurb": "Cedar is a wood note in the umami family."
+   "blurb": "Cedar is the dry, sweetly resinous scent of cedarwood, familiar from pencil boxes and cigar humidors."
   },
   {
    "id": "FLAVOR-SPICE",
@@ -4043,7 +5051,7 @@
    },
    "art": "/art/flavor/peppercorn.png",
    "artKind": "sprite",
-   "blurb": "Spice is a bitter note."
+   "blurb": "Spice is a broad sweet-spice impression, cinnamon, clove and pepper blurred together rather than any one jar."
   },
   {
    "id": "FLAVOR-CHERRY",
@@ -4055,7 +5063,7 @@
    },
    "art": "/art/flavor/cherry.png",
    "artKind": "sprite",
-   "blurb": "Cherry is a red fruit note in the sweet family."
+   "blurb": "Cherry is the bright note of fresh sweet cherries, the signature fruit of many mid-weight reds."
   },
   {
    "id": "FLAVOR-EARTH",
@@ -4067,7 +5075,7 @@
    },
    "art": "/art/flavor/earth.png",
    "artKind": "sprite",
-   "blurb": "Earth is an umami note."
+   "blurb": "Earth is the smell of turned soil or a forest floor after rain."
   },
   {
    "id": "FLAVOR-FLORAL",
@@ -4079,7 +5087,7 @@
    },
    "art": "/art/flavor/whiteblossom.png",
    "artKind": "sprite",
-   "blurb": "Floral is an umami note."
+   "blurb": "Floral is a general flower-garden lift rather than any one identifiable bloom."
   },
   {
    "id": "FLAVOR-RED-APPLE",
@@ -4091,7 +5099,7 @@
    },
    "art": "/art/flavor/red-apple.png",
    "artKind": "sprite",
-   "blurb": "Red Apple is an orchard fruit note in the sweet family."
+   "blurb": "Red apple is the mellow, faintly sweet scent of a ripe dessert apple."
   },
   {
    "id": "FLAVOR-BUTTER",
@@ -4103,7 +5111,7 @@
    },
    "art": "/art/flavor/butter.png",
    "artKind": "sprite",
-   "blurb": "Butter is a baking note in the sweet family."
+   "blurb": "Butter is the rich, creamy scent of melted butter."
   },
   {
    "id": "FLAVOR-VANILLA",
@@ -4115,7 +5123,7 @@
    },
    "art": "/art/flavor/vanilla.png",
    "artKind": "sprite",
-   "blurb": "Vanilla is a baking note in the sweet family."
+   "blurb": "Vanilla is the sweet baking scent of vanilla pod."
   },
   {
    "id": "FLAVOR-PLUM",
@@ -4127,7 +5135,7 @@
    },
    "art": "/art/flavor/plum.png",
    "artKind": "sprite",
-   "blurb": "Plum is a dark fruit note in the sweet family."
+   "blurb": "Plum is the fleshy dark fruit note of ripe plums, rounder and softer than blackberry."
   },
   {
    "id": "FLAVOR-CHOCOLATE",
@@ -4139,7 +5147,7 @@
    },
    "art": "/art/flavor/chocolate2.png",
    "artKind": "sprite",
-   "blurb": "Chocolate is a baking note in the sweet family."
+   "blurb": "Chocolate is a sweet, rounded cocoa richness in the finish of a red wine."
   },
   {
    "id": "FLAVOR-HERBS",
@@ -4151,7 +5159,7 @@
    },
    "art": "/art/flavor/driedherbs.png",
    "artKind": "sprite",
-   "blurb": "Herbs is a herbal note in the umami family."
+   "blurb": "Herbs is the mixed green scent of a kitchen herb bundle, thyme, bay and their kin."
   },
   {
    "id": "FLAVOR-BLACKBERRY",
@@ -4163,7 +5171,7 @@
    },
    "art": "/art/flavor/blackberry.png",
    "artKind": "sprite",
-   "blurb": "Blackberry is a berry note in the sweet family."
+   "blurb": "Blackberry is the deep, sweet-tart note of ripe bramble fruit."
   },
   {
    "id": "FLAVOR-PEPPER",
@@ -4175,7 +5183,7 @@
    },
    "art": "/art/flavor/peppercorn.png",
    "artKind": "sprite",
-   "blurb": "Pepper is a spice note in the bitter family."
+   "blurb": "Pepper is the pungent bite of freshly cracked peppercorns."
   },
   {
    "id": "FLAVOR-SMOKE",
@@ -4187,7 +5195,7 @@
    },
    "art": "/art/flavor/smoke.png",
    "artKind": "sprite",
-   "blurb": "Smoke is a smoky note in the bitter family."
+   "blurb": "Smoke is the char and woodsmoke edge some reds carry."
   },
   {
    "id": "FLAVOR-LIME",
@@ -4199,7 +5207,7 @@
    },
    "art": "/art/flavor/lime.png",
    "artKind": "sprite",
-   "blurb": "Lime is a citrus note in the sour family."
+   "blurb": "Lime is the sharp, zesty citrus note at the acid end of the white wine spectrum."
   },
   {
    "id": "FLAVOR-GOOSEBERRY",
@@ -4211,7 +5219,7 @@
    },
    "art": "/art/flavor/gooseberry.png",
    "artKind": "sprite",
-   "blurb": "Gooseberry is a berry note in the sweet family."
+   "blurb": "Gooseberry is the tart, faintly musky green berry long used to describe Sauvignon Blanc."
   },
   {
    "id": "FLAVOR-GRASS",
@@ -4223,7 +5231,7 @@
    },
    "art": "/art/flavor/grass.png",
    "artKind": "sprite",
-   "blurb": "Grass is a herbal note in the umami family."
+   "blurb": "Grass is the fresh green smell of a just-mown lawn."
   },
   {
    "id": "FLAVOR-PEACH",
@@ -4235,7 +5243,7 @@
    },
    "art": "/art/flavor/peach.png",
    "artKind": "sprite",
-   "blurb": "Peach is a stone fruit note in the sweet family."
+   "blurb": "Peach is the juicy stone fruit note of ripe yellow peaches."
   },
   {
    "id": "FLAVOR-PETROL",
@@ -4247,7 +5255,7 @@
    },
    "art": "/art/flavor/petrol.png",
    "artKind": "sprite",
-   "blurb": "Petrol is an earth note in the umami family."
+   "blurb": "Petrol is the kerosene-like scent that aged Riesling famously develops."
   },
   {
    "id": "FLAVOR-ROSE",
@@ -4259,7 +5267,7 @@
    },
    "art": "/art/flavor/redrose.png",
    "artKind": "sprite",
-   "blurb": "Rose is a floral note in the umami family."
+   "blurb": "Rose is the unmistakable perfume of fresh roses."
   },
   {
    "id": "FLAVOR-TAR",
@@ -4271,7 +5279,7 @@
    },
    "art": "/art/flavor/tar.png",
    "artKind": "sprite",
-   "blurb": "Tar is an earth note in the umami family."
+   "blurb": "Tar is the dark, resinous scent of warm asphalt."
   },
   {
    "id": "FLAVOR-TOMATO",
@@ -4283,7 +5291,7 @@
    },
    "art": "/art/flavor/tomato.png",
    "artKind": "sprite",
-   "blurb": "Tomato is a vegetal note in the umami family."
+   "blurb": "Tomato is the savoury, faintly sweet scent of ripe or stewed tomatoes."
   },
   {
    "id": "FLAVOR-ESPRESSO",
@@ -4295,7 +5303,7 @@
    },
    "art": "/art/flavor/coffee.png",
    "artKind": "sprite",
-   "blurb": "Espresso is a baking note in the sweet family."
+   "blurb": "Espresso is the dark roasted coffee note in the bass register of a red wine."
   },
   {
    "id": "FLAVOR-STRAWBERRY",
@@ -4307,7 +5315,7 @@
    },
    "art": "/art/flavor/strawberry.png",
    "artKind": "sprite",
-   "blurb": "Strawberry is a berry note in the sweet family."
+   "blurb": "Strawberry is the light, sweet note of ripe strawberries."
   },
   {
    "id": "FLAVOR-RASPBERRY",
@@ -4319,7 +5327,7 @@
    },
    "art": "/art/flavor/raspberry.png",
    "artKind": "sprite",
-   "blurb": "Raspberry is a berry note in the sweet family."
+   "blurb": "Raspberry is the perfumed, sweet-tart note of fresh raspberries, sitting between strawberry and cherry in the red fruit spectrum."
   },
   {
    "id": "FLAVOR-FIG",
@@ -4331,7 +5339,7 @@
    },
    "art": "/art/flavor/fig.png",
    "artKind": "sprite",
-   "blurb": "Fig is a dark fruit note in the sweet family."
+   "blurb": "Fig is the dense, honeyed note of fresh ripe figs."
   },
   {
    "id": "FLAVOR-TOBACCO",
@@ -4343,7 +5351,7 @@
    },
    "art": "/art/flavor/tobaccoleaf.png",
    "artKind": "sprite",
-   "blurb": "Tobacco is a spice note in the bitter family."
+   "blurb": "Tobacco is the sweet leafy scent of a cigar box or cured pipe leaf."
   },
   {
    "id": "FLAVOR-DILL",
@@ -4355,7 +5363,7 @@
    },
    "art": "/art/flavor/dill.png",
    "artKind": "sprite",
-   "blurb": "Dill is a herbal note in the umami family."
+   "blurb": "Dill is the distinct pickle-herb scent of dill fronds."
   },
   {
    "id": "FLAVOR-BLUEBERRY",
@@ -4367,7 +5375,7 @@
    },
    "art": "/art/flavor/blueberry.png",
    "artKind": "sprite",
-   "blurb": "Blueberry is a berry note in the sweet family."
+   "blurb": "Blueberry is the plush, sweet dark berry note of ripe blueberries."
   },
   {
    "id": "FLAVOR-COCOA",
@@ -4379,7 +5387,7 @@
    },
    "art": "/art/flavor/cocoa.png",
    "artKind": "sprite",
-   "blurb": "Cocoa is a baking note in the sweet family."
+   "blurb": "Cocoa is the dry, dusty cocoa-powder note that coats a red wine's tannin."
   },
   {
    "id": "FLAVOR-BELL-PEPPER",
@@ -4391,7 +5399,7 @@
    },
    "art": "/art/flavor/greenbellpepper.png",
    "artKind": "sprite",
-   "blurb": "Bell Pepper is a vegetal note in the umami family."
+   "blurb": "Bell pepper is the green capsicum scent found in some reds."
   },
   {
    "id": "FLAVOR-GRAPHITE",
@@ -4403,7 +5411,7 @@
    },
    "art": "/art/flavor/graphite.png",
    "artKind": "sprite",
-   "blurb": "Graphite is an earth note in the umami family."
+   "blurb": "Graphite is the cool scent of pencil lead, a mineral edge in structured reds."
   },
   {
    "id": "FLAVOR-QUINCE",
@@ -4415,7 +5423,7 @@
    },
    "art": "/art/flavor/quince.png",
    "artKind": "sprite",
-   "blurb": "Quince is an orchard fruit note in the sweet family."
+   "blurb": "Quince is the tart, perfumed orchard fruit note of quince paste, denser than apple or pear."
   },
   {
    "id": "FLAVOR-HONEY",
@@ -4427,7 +5435,7 @@
    },
    "art": "/art/flavor/honey.png",
    "artKind": "sprite",
-   "blurb": "Honey is a wax note in the umami family."
+   "blurb": "Honey is the sweet floral richness of liquid honey."
   },
   {
    "id": "FLAVOR-CHAMOMILE",
@@ -4439,7 +5447,7 @@
    },
    "art": "/art/flavor/chamomile.png",
    "artKind": "sprite",
-   "blurb": "Chamomile is a floral note in the umami family."
+   "blurb": "Chamomile is the gentle, apple-tinged scent of chamomile flowers, a dried flower note rather than a fresh one."
   },
   {
    "id": "FLAVOR-TANGERINE",
@@ -4451,7 +5459,7 @@
    },
    "art": "/art/flavor/orange.png",
    "artKind": "sprite",
-   "blurb": "Tangerine is a citrus note in the sour family."
+   "blurb": "Tangerine is the sweet, fragrant citrus of mandarin peel, softer than orange."
   },
   {
    "id": "FLAVOR-HONEYSUCKLE",
@@ -4463,7 +5471,7 @@
    },
    "art": "/art/flavor/honeysuckle.png",
    "artKind": "sprite",
-   "blurb": "Honeysuckle is a floral note in the umami family."
+   "blurb": "Honeysuckle is the heady nectar scent of honeysuckle blossom."
   },
   {
    "id": "FLAVOR-MANGO",
@@ -4475,7 +5483,7 @@
    },
    "art": "/art/flavor/mango.png",
    "artKind": "sprite",
-   "blurb": "Mango is a tropical note in the sweet family."
+   "blurb": "Mango is the lush tropical note of fully ripe mango flesh."
   },
   {
    "id": "FLAVOR-POMEGRANATE",
@@ -4487,7 +5495,7 @@
    },
    "art": "/art/flavor/pomegranate.png",
    "artKind": "sprite",
-   "blurb": "Pomegranate is a red fruit note in the sweet family."
+   "blurb": "Pomegranate is the tangy, lightly bitter red fruit note of pomegranate seeds."
   },
   {
    "id": "FLAVOR-BANANA",
@@ -4499,7 +5507,7 @@
    },
    "art": "/art/flavor/banana.png",
    "artKind": "sprite",
-   "blurb": "Banana is a tropical note in the sweet family."
+   "blurb": "Banana is the candied banana scent of isoamyl acetate, an ester created by fermentation."
   },
   {
    "id": "FLAVOR-JAMMY-BERRY",
@@ -4511,7 +5519,7 @@
    },
    "art": "/art/flavor/jammyberry.png",
    "artKind": "sprite",
-   "blurb": "Jammy Berry is a berry note in the sweet family."
+   "blurb": "Jammy berry is cooked, sugared berry fruit rather than fresh, berries reduced to preserves."
   },
   {
    "id": "FLAVOR-CINNAMON",
@@ -4523,7 +5531,7 @@
    },
    "art": "/art/flavor/cinnamon.png",
    "artKind": "sprite",
-   "blurb": "Cinnamon is a spice note in the bitter family."
+   "blurb": "Cinnamon is the warm bark spice of ground cinnamon."
   },
   {
    "id": "FLAVOR-LEMON-CURD",
@@ -4535,7 +5543,7 @@
    },
    "art": "/art/flavor/lemoncurd.png",
    "artKind": "sprite",
-   "blurb": "Lemon Curd is a citrus note in the sour family."
+   "blurb": "Lemon curd is citrus made rich, lemon folded into butter and sugar."
   },
   {
    "id": "FLAVOR-BEESWAX",
@@ -4547,7 +5555,7 @@
    },
    "art": "/art/flavor/beeswax.png",
    "artKind": "sprite",
-   "blurb": "Beeswax is a wax note in the umami family."
+   "blurb": "Beeswax is the soft, waxy polish note of candle wax or honeycomb, sweetness of scent without sugar."
   },
   {
    "id": "FLAVOR-LANOLIN",
@@ -4559,7 +5567,7 @@
    },
    "art": "/art/flavor/lanolin.png",
    "artKind": "sprite",
-   "blurb": "Lanolin is a wax note in the umami family."
+   "blurb": "Lanolin is the soft scent of wool grease, clean fleece rather than farmyard."
   },
   {
    "id": "FLAVOR-BLACK-FRUIT",
@@ -4571,7 +5579,7 @@
    },
    "art": "/art/flavor/blackberry.png",
    "artKind": "sprite",
-   "blurb": "Black Fruit is a berry note in the sweet family."
+   "blurb": "Black fruit is a composite of dark berries and plums, fruit read as a mass rather than as any single berry."
   },
   {
    "id": "FLAVOR-GAME",
@@ -4583,7 +5591,7 @@
    },
    "art": "/art/flavor/game.png",
    "artKind": "sprite",
-   "blurb": "Game is an umami note."
+   "blurb": "Game is the savoury, meaty scent of hung game or cured meat."
   },
   {
    "id": "FLAVOR-SOUR-CHERRY",
@@ -4595,7 +5603,7 @@
    },
    "art": "/art/flavor/sour-cherry.png",
    "artKind": "sprite",
-   "blurb": "Sour Cherry is a red fruit note in the sweet family."
+   "blurb": "Sour cherry is the tart note of morello cherries, brighter and sharper than sweet cherry."
   },
   {
    "id": "FLAVOR-LICORICE",
@@ -4607,7 +5615,7 @@
    },
    "art": "/art/flavor/licorice.png",
    "artKind": "sprite",
-   "blurb": "Licorice is a spice note in the bitter family."
+   "blurb": "Licorice is the dark anise-root sweetness of black licorice."
   },
   {
    "id": "FLAVOR-LEMON",
@@ -4619,7 +5627,7 @@
    },
    "art": "/art/flavor/lemon.png",
    "artKind": "sprite",
-   "blurb": "Lemon is a citrus note in the sour family."
+   "blurb": "Lemon is the fresh citrus note at the heart of most crisp white wines."
   },
   {
    "id": "FLAVOR-MINERAL",
@@ -4631,7 +5639,7 @@
    },
    "art": "/art/flavor/mineral.png",
    "artKind": "sprite",
-   "blurb": "Mineral is an earth note in the umami family."
+   "blurb": "Mineral is a catch-all for stony, non-fruit freshness, closer to wet rock than to any fruit or flower."
   },
   {
    "id": "FLAVOR-VIOLET",
@@ -4643,7 +5651,7 @@
    },
    "art": "/art/flavor/violet.png",
    "artKind": "sprite",
-   "blurb": "Violet is a floral note in the umami family."
+   "blurb": "Violet is the dark floral perfume of violet petals, sweeter and deeper than rose."
   },
   {
    "id": "FLAVOR-LILAC",
@@ -4655,7 +5663,7 @@
    },
    "art": "/art/flavor/lilac.png",
    "artKind": "sprite",
-   "blurb": "Lilac is a floral note in the umami family."
+   "blurb": "Lilac is the light spring blossom scent of lilac flowers, airier than violet."
   },
   {
    "id": "FLAVOR-SAGE",
@@ -4667,7 +5675,7 @@
    },
    "art": "/art/flavor/sage.png",
    "artKind": "sprite",
-   "blurb": "Sage is a herbal note in the umami family."
+   "blurb": "Sage is the dusty, savoury herb note of dried sage leaves."
   },
   {
    "id": "FLAVOR-GREEN-PEPPER",
@@ -4679,7 +5687,7 @@
    },
    "art": "/art/flavor/greenbellpepper.png",
    "artKind": "sprite",
-   "blurb": "Green Pepper is a vegetal note in the umami family."
+   "blurb": "Green pepper is the fresh capsicum bite of an unripe pepper, sharper than the rounded bell pepper note."
   },
   {
    "id": "FLAVOR-LYCHEE",
@@ -4691,7 +5699,7 @@
    },
    "art": "/art/flavor/lychee.png",
    "artKind": "sprite",
-   "blurb": "Lychee is a tropical note in the sweet family."
+   "blurb": "Lychee is the perfumed, rosewater-tinged tropical note of lychee fruit."
   },
   {
    "id": "FLAVOR-LEMON-ZEST",
@@ -4703,7 +5711,7 @@
    },
    "art": "/art/flavor/lemonzest.png",
    "artKind": "sprite",
-   "blurb": "Lemon Zest is a citrus note in the sour family."
+   "blurb": "Lemon zest is the oily, aromatic side of lemon peel rather than its juice."
   },
   {
    "id": "FLAVOR-ORANGE-BLOSSOM",
@@ -4715,7 +5723,7 @@
    },
    "art": "/art/flavor/orange-blossom.png",
    "artKind": "sprite",
-   "blurb": "Orange Blossom is a citrus note in the sour family."
+   "blurb": "Orange blossom is the sweet neroli perfume of citrus flowers."
   },
   {
    "id": "FLAVOR-PEAR",
@@ -4727,7 +5735,7 @@
    },
    "art": "/art/flavor/pear.png",
    "artKind": "sprite",
-   "blurb": "Pear is an orchard fruit note in the sweet family."
+   "blurb": "Pear is the soft orchard fruit note of ripe pears, gentler and rounder than apple."
   },
   {
    "id": "FLAVOR-GINGER",
@@ -4739,7 +5747,7 @@
    },
    "art": "/art/flavor/ginger.png",
    "artKind": "sprite",
-   "blurb": "Ginger is a spice note in the bitter family."
+   "blurb": "Ginger is the warm, faintly hot spice of fresh ginger root."
   },
   {
    "id": "FLAVOR-APRICOT",
@@ -4751,7 +5759,7 @@
    },
    "art": "/art/flavor/apricot.png",
    "artKind": "sprite",
-   "blurb": "Apricot is a stone fruit note in the sweet family."
+   "blurb": "Apricot is the dense, honeyed stone fruit note of ripe apricots."
   },
   {
    "id": "FLAVOR-SEA-SALT",
@@ -4763,7 +5771,7 @@
    },
    "art": "/art/flavor/seasalt.png",
    "artKind": "sprite",
-   "blurb": "Sea Salt is a salty note."
+   "blurb": "Sea salt is a clean saline impression on the finish, tasted as much as smelled."
   },
   {
    "id": "FLAVOR-GRAPEFRUIT",
@@ -4775,7 +5783,7 @@
    },
    "art": "/art/flavor/grapefruit.png",
    "artKind": "sprite",
-   "blurb": "Grapefruit is a citrus note in the sour family."
+   "blurb": "Grapefruit is the bittersweet citrus note of fresh grapefruit flesh and pith."
   },
   {
    "id": "FLAVOR-GREEN-PEA",
@@ -4787,7 +5795,7 @@
    },
    "art": "/art/flavor/greenpea.png",
    "artKind": "sprite",
-   "blurb": "Green Pea is a vegetal note in the umami family."
+   "blurb": "Green pea is the sweet vegetal scent of freshly podded peas."
   },
   {
    "id": "FLAVOR-WHITE-PEPPER",
@@ -4799,7 +5807,7 @@
    },
    "art": "/art/flavor/whitepepper.png",
    "artKind": "sprite",
-   "blurb": "White Pepper is a spice note in the bitter family."
+   "blurb": "White pepper is the sharper, earthier cousin of black pepper spice."
   },
   {
    "id": "FLAVOR-ALMOND",
@@ -4811,7 +5819,7 @@
    },
    "art": "/art/flavor/almond.png",
    "artKind": "sprite",
-   "blurb": "Almond is a nut note in the umami family."
+   "blurb": "Almond is the clean bitter-almond note in the finish of many Italian-style whites."
   },
   {
    "id": "FLAVOR-FENNEL",
@@ -4823,7 +5831,7 @@
    },
    "art": "/art/flavor/fennel.png",
    "artKind": "sprite",
-   "blurb": "Fennel is a herbal note in the umami family."
+   "blurb": "Fennel is the fresh anise-and-green scent of fennel bulb and fronds."
   },
   {
    "id": "FLAVOR-HERBAL-TEA",
@@ -4835,7 +5843,7 @@
    },
    "art": "/art/flavor/tealeaf.png",
    "artKind": "sprite",
-   "blurb": "Herbal Tea is a herbal note in the umami family."
+   "blurb": "Herbal tea is the dried infusion scent of tisanes, chamomile, verbena and their kin steeped rather than fresh."
   },
   {
    "id": "FLAVOR-MARZIPAN",
@@ -4847,7 +5855,7 @@
    },
    "art": "/art/flavor/marzipan.png",
    "artKind": "sprite",
-   "blurb": "Marzipan is a nut note in the umami family."
+   "blurb": "Marzipan is sweet almond paste, richer and more sugared than the plain almond note."
   },
   {
    "id": "FLAVOR-GREEN-APPLE",
@@ -4859,7 +5867,7 @@
    },
    "art": "/art/flavor/green-apple.png",
    "artKind": "sprite",
-   "blurb": "Green Apple is an orchard fruit note in the sweet family."
+   "blurb": "Green apple is the crisp, tart orchard note of an unripe apple, malic acid made fruit."
   },
   {
    "id": "FLAVOR-HAZELNUT",
@@ -4871,7 +5879,7 @@
    },
    "art": "/art/flavor/hazelnut.png",
    "artKind": "sprite",
-   "blurb": "Hazelnut is a nut note in the umami family."
+   "blurb": "Hazelnut is the toasted nut note that white wines earn from lees aging, old oak or gentle oxidation."
   },
   {
    "id": "FLAVOR-SALINE",
@@ -4883,7 +5891,7 @@
    },
    "art": "/art/flavor/saline.png",
    "artKind": "sprite",
-   "blurb": "Saline is a salty note."
+   "blurb": "Saline is a briny freshness that makes a wine taste faintly of the sea itself."
   },
   {
    "id": "FLAVOR-LEATHER",
@@ -4895,7 +5903,7 @@
    },
    "art": "/art/flavor/leather.png",
    "artKind": "sprite",
-   "blurb": "Leather is a savory note in the umami family."
+   "blurb": "Leather is the scent of worked hide, saddle rather than shoe polish."
   },
   {
    "id": "FLAVOR-BLACK-CHERRY",
@@ -4907,7 +5915,7 @@
    },
    "art": "/art/flavor/blackcherry.png",
    "artKind": "sprite",
-   "blurb": "Black Cherry is a red fruit note in the sweet family."
+   "blurb": "Black cherry is the deep, sweet note of dark cherries, riper and denser than red cherry."
   },
   {
    "id": "FLAVOR-HERB",
@@ -4919,7 +5927,7 @@
    },
    "art": "/art/flavor/driedherbs.png",
    "artKind": "sprite",
-   "blurb": "Herb is a herbal note in the umami family."
+   "blurb": "Herb is a single clean green accent rather than a full herbal bouquet."
   },
   {
    "id": "FLAVOR-BLACK-PLUM",
@@ -4931,7 +5939,7 @@
    },
    "art": "/art/flavor/blackplum.png",
    "artKind": "sprite",
-   "blurb": "Black Plum is a dark fruit note in the sweet family."
+   "blurb": "Black plum is the dark-skinned plum note, deeper and less sweet than red plum."
   },
   {
    "id": "FLAVOR-GREEN-PEPPERCORN",
@@ -4943,7 +5951,7 @@
    },
    "art": "/art/flavor/greenpeppercorn.png",
    "artKind": "sprite",
-   "blurb": "Green Peppercorn is a vegetal note in the umami family."
+   "blurb": "Green peppercorn is the fresh, brined bite of unripe peppercorns, greener and juicier than cracked black pepper."
   },
   {
    "id": "FLAVOR-TEA-LEAF",
@@ -4955,7 +5963,7 @@
    },
    "art": "/art/flavor/tealeaf.png",
    "artKind": "sprite",
-   "blurb": "Tea Leaf is a herbal note in the umami family."
+   "blurb": "Tea leaf is the dry, gently tannic scent of loose black tea."
   },
   {
    "id": "FLAVOR-YUZU-CITRUS",
@@ -4967,7 +5975,7 @@
    },
    "art": "/art/flavor/yuzu.png",
    "artKind": "sprite",
-   "blurb": "Yuzu Citrus is a citrus note in the sour family."
+   "blurb": "Yuzu citrus is the fragrant Japanese citrus note, part grapefruit and part mandarin with a floral edge."
   },
   {
    "id": "FLAVOR-JASMINE",
@@ -4979,7 +5987,7 @@
    },
    "art": "/art/flavor/jasmine.png",
    "artKind": "sprite",
-   "blurb": "Jasmine is a floral note in the umami family."
+   "blurb": "Jasmine is the sweet white-flower perfume of jasmine blossom, headier than orchard bloom."
   },
   {
    "id": "FLAVOR-STRAWBERRY-CANDY",
@@ -4991,7 +5999,7 @@
    },
    "art": "/art/flavor/strawberrycandy.png",
    "artKind": "sprite",
-   "blurb": "Strawberry Candy is a berry note in the sweet family."
+   "blurb": "Strawberry candy is the confected strawberry note of sweet-shop candies rather than fresh fruit."
   },
   {
    "id": "FLAVOR-ROSE-PETAL",
@@ -5003,7 +6011,7 @@
    },
    "art": "/art/flavor/rosepetal.png",
    "artKind": "sprite",
-   "blurb": "Rose Petal is a floral note in the umami family."
+   "blurb": "Rose petal is a softer, drier take on rose, loose petals rather than full perfume."
   },
   {
    "id": "FLAVOR-SMOKY-SPICE",
@@ -5015,7 +6023,7 @@
    },
    "art": "/art/flavor/smokyspice.png",
    "artKind": "sprite",
-   "blurb": "Smoky Spice is a spice note in the bitter family."
+   "blurb": "Smoky spice is spice with an ember behind it, clove and pepper laid over char."
   },
   {
    "id": "FLAVOR-WHITE-FLOWER",
@@ -5027,7 +6035,7 @@
    },
    "art": "/art/flavor/whiteblossom.png",
    "artKind": "sprite",
-   "blurb": "White Flower is a floral note in the umami family."
+   "blurb": "White flower is the light blossom scent of small white flowers, acacia and orchard bloom in one impression."
   },
   {
    "id": "FLAVOR-DARK-CHOCOLATE",
@@ -5039,7 +6047,7 @@
    },
    "art": "/art/flavor/chocolate.png",
    "artKind": "sprite",
-   "blurb": "Dark Chocolate is a baking note in the sweet family."
+   "blurb": "Dark chocolate is the bitter-edged cocoa note, deeper and less sweet than milk chocolate."
   },
   {
    "id": "FLAVOR-DRIED-HERBS",
@@ -5051,7 +6059,7 @@
    },
    "art": "/art/flavor/driedherbs.png",
    "artKind": "sprite",
-   "blurb": "Dried Herbs is a herbal note in the umami family."
+   "blurb": "Dried herbs is the brittle scent of the herb jar, oregano and thyme past their fresh green stage."
   },
   {
    "id": "FLAVOR-RED-CHERRY",
@@ -5063,7 +6071,7 @@
    },
    "art": "/art/flavor/cherry.png",
    "artKind": "sprite",
-   "blurb": "Red Cherry is a red fruit note in the sweet family."
+   "blurb": "Red cherry is the crisp, mid-weight cherry note between sour cherry and black cherry."
   },
   {
    "id": "FLAVOR-DRIED-FIG",
@@ -5075,7 +6083,7 @@
    },
    "art": "/art/flavor/driedfig.png",
    "artKind": "sprite",
-   "blurb": "Dried Fig is a dark fruit note in the sweet family."
+   "blurb": "Dried fig is the concentrated, raisined sweetness of figs dried in the sun."
   },
   {
    "id": "FLAVOR-BRIOCHE",
@@ -5087,7 +6095,7 @@
    },
    "art": "/art/flavor/brioche.png",
    "artKind": "sprite",
-   "blurb": "Brioche is a bread note in the sweet family."
+   "blurb": "Brioche is the warm scent of buttery yeast bread."
   },
   {
    "id": "FLAVOR-BLACK-PEPPER",
@@ -5099,7 +6107,7 @@
    },
    "art": "/art/flavor/peppercorn.png",
    "artKind": "sprite",
-   "blurb": "Black Pepper is a spice note in the bitter family."
+   "blurb": "Black pepper is the direct spice of cracked black peppercorns, warmer and darker than white pepper."
   },
   {
    "id": "FLAVOR-ALPINE-HERBS",
@@ -5111,7 +6119,7 @@
    },
    "art": "/art/flavor/alpineherbs.png",
    "artKind": "sprite",
-   "blurb": "Alpine Herbs is a herbal note in the umami family."
+   "blurb": "Alpine herbs is the cool scent of mountain meadow plants, gentian and wild thyme in thin air."
   },
   {
    "id": "FLAVOR-CHALK",
@@ -5123,7 +6131,7 @@
    },
    "art": "/art/flavor/chalk.png",
    "artKind": "sprite",
-   "blurb": "Chalk is an earth note in the umami family."
+   "blurb": "Chalk is the dry, dusty scent of chalk or limestone dust."
   },
   {
    "id": "FLAVOR-SEA-SPRAY",
@@ -5135,7 +6143,7 @@
    },
    "art": "/art/flavor/seaspray.png",
    "artKind": "sprite",
-   "blurb": "Sea Spray is a briny note in the salty family."
+   "blurb": "Sea spray is the fresh iodine-and-salt scent of breaking waves, airier than salt on the palate."
   },
   {
    "id": "FLAVOR-TOMATO-LEAF",
@@ -5147,7 +6155,7 @@
    },
    "art": "/art/flavor/tomatoleaf.png",
    "artKind": "sprite",
-   "blurb": "Tomato Leaf is a vegetal note in the umami family."
+   "blurb": "Tomato leaf is the sharp green scent of tomato vines, more herbal and pungent than the fruit itself."
   },
   {
    "id": "FLAVOR-OLIVE",
@@ -5159,7 +6167,7 @@
    },
    "art": "/art/flavor/olive.png",
    "artKind": "sprite",
-   "blurb": "Olive is a vegetal note in the umami family."
+   "blurb": "Olive is the briny, savoury note of black or green olives."
   },
   {
    "id": "FLAVOR-CLOVE",
@@ -5171,7 +6179,7 @@
    },
    "art": "/art/flavor/clove.png",
    "artKind": "sprite",
-   "blurb": "Clove is a spice note in the bitter family."
+   "blurb": "Clove is the warm, faintly numbing spice of whole cloves."
   },
   {
    "id": "FLAVOR-WHITE-PEACH",
@@ -5183,7 +6191,7 @@
    },
    "art": "/art/flavor/white-peach.png",
    "artKind": "sprite",
-   "blurb": "White Peach is a stone fruit note in the sweet family."
+   "blurb": "White peach is the delicate cousin of yellow peach, sweeter scented and lower in acid."
   },
   {
    "id": "FLAVOR-SEA-BREEZE",
@@ -5195,7 +6203,7 @@
    },
    "art": "/art/flavor/seabreeze.png",
    "artKind": "sprite",
-   "blurb": "Sea Breeze is a briny note in the salty family."
+   "blurb": "Sea breeze is a light marine freshness, salt air rather than salt taste."
   },
   {
    "id": "FLAVOR-NUTMEG",
@@ -5207,7 +6215,7 @@
    },
    "art": "/art/flavor/nutmeg.png",
    "artKind": "sprite",
-   "blurb": "Nutmeg is a spice note in the bitter family."
+   "blurb": "Nutmeg is the soft, woody baking spice of freshly grated nutmeg."
   },
   {
    "id": "FLAVOR-WHITE-BLOSSOM",
@@ -5219,7 +6227,7 @@
    },
    "art": "/art/flavor/whiteblossom.png",
    "artKind": "sprite",
-   "blurb": "White Blossom is a floral note in the umami family."
+   "blurb": "White blossom is the airy scent of orchard trees in flower, fainter and fresher than jasmine."
   },
   {
    "id": "FLAVOR-FRESH-HERBS",
@@ -5231,7 +6239,7 @@
    },
    "art": "/art/flavor/mint.png",
    "artKind": "sprite",
-   "blurb": "Fresh Herbs is a herbal note in the umami family."
+   "blurb": "Fresh herbs is the just-cut green scent of living herbs, brighter than the dried jar."
   },
   {
    "id": "FLAVOR-STONE",
@@ -5243,7 +6251,7 @@
    },
    "art": "/art/flavor/stone.png",
    "artKind": "sprite",
-   "blurb": "Stone is an earth note in the umami family."
+   "blurb": "Stone is the blunt scent of dry rocks in the sun, heavier than chalk and less saline than the sea notes."
   },
   {
    "id": "FLAVOR-PINEAPPLE",
@@ -5255,7 +6263,7 @@
    },
    "art": "/art/flavor/pineapple.png",
    "artKind": "sprite",
-   "blurb": "Pineapple is a tropical note in the sweet family."
+   "blurb": "Pineapple is the bright tropical note of ripe pineapple flesh."
   },
   {
    "id": "FLAVOR-VOLCANIC-ASH",
@@ -5267,7 +6275,7 @@
    },
    "art": "/art/flavor/volcanicash.png",
    "artKind": "sprite",
-   "blurb": "Volcanic Ash is a smoky note in the bitter family."
+   "blurb": "Volcanic ash is a fine mineral smokiness, ash and warm stone rather than woodsmoke."
   },
   {
    "id": "FLAVOR-BLACKBERRY-JAM",
@@ -5279,7 +6287,7 @@
    },
    "art": "/art/flavor/blackberry-jam.png",
    "artKind": "sprite",
-   "blurb": "Blackberry Jam is a berry note in the sweet family."
+   "blurb": "Blackberry jam is bramble fruit cooked down to preserves, sweeter and heavier than the fresh berry."
   }
  ]
 }

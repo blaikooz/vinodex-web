@@ -183,12 +183,29 @@ describe('<EntryDetail /> renders every category', () => {
   });
 
   it('a country with no appellation tags falls back to its regions, or draws no header (v0.6.50)', async () => {
-    // Lebanon is the one COUNTRY record whose tags carry only the marker.
-    // iOS falls back to its regions' classifications; Lebanon has no region
-    // entries, so the section stays away entirely -- no empty header.
+    // Lebanon is still the one COUNTRY record whose tags carry only the
+    // marker, but the 0.9.44-0.9.53 data pass gave it Bekaa Valley and
+    // Batroun, both IGP. So it now exercises the *fallback* half of the rule
+    // it was written for: the header appears, carrying the regions' system.
+    // (It proved the other half until 2026-09-09, when it had no regions.)
     const lebanon = pick('lebanon', e => e.id === 'C028');
     renderEntry(lebanon);
     await waitFor(() => expect(document.body.textContent).toContain('Lebanon'));
+    expect(sectionTitles()).toContain('APPELLATION SYSTEM');
+    expect(document.body.textContent).toContain('IGP');
+
+    cleanup();
+    // The never-empty-header half, which no shipped country can prove any
+    // more -- every one of the 34 now declares a system or has a region that
+    // does. This suite's fixtures are real entries on purpose, so rather
+    // than invent a country, the guard is checked against a real one with
+    // its vocabulary stripped: the branch is defensive, and the alternative
+    // is not testing it at all.
+    // The name is what the roster resolves regions by, so the clone is
+    // renamed rather than re-origined -- no region claims this country.
+    const bareCountry = { ...lebanon, name: 'Nowhereia', tags: ['COUNTRY'] } as WineEntry;
+    renderEntry(bareCountry);
+    await waitFor(() => expect(document.body.textContent).toContain(bareCountry.name));
     expect(sectionTitles()).not.toContain('APPELLATION SYSTEM');
 
     cleanup();

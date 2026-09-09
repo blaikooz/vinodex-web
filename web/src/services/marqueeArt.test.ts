@@ -42,6 +42,11 @@ describe('marquee art', () => {
     // marquee-deviceworkshop left this list when the workshop screen wired it
     // up (v0.5.0).
     'marquee-labelscanner', // v6#27, deferred with reason (no web OCR dep)
+    // Freed 2026-09-09, when the 0.9.44-0.9.53 art pass brought dedicated
+    // panels for the three screens that had been borrowing generic ones:
+    // PROF. VINO, SUPPORT and YOU MIGHT LIKE now draw their own.
+    'marquee-notifications', // the web has no notifications screen at all
+    'marquee-vinodex',       // the menu draws marquee-menu; this is iOS's spare
   ]);
 
   it('every mirrored panel is reachable from some title', () => {

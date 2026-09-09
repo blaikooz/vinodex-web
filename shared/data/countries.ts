@@ -829,7 +829,7 @@ export const COUNTRIES: CountryGateEntry[] = [
   {
     id: 'C006',
     name: 'Hungary',
-    description: 'Tokaj was the first wine region anywhere to be classified by vineyard, in 1730 — ahead of Bordeaux by well over a century. Its Aszu wines are made from Furmint berries shrivelled by botrytis, kneaded to a paste and measured out in puttonyos; the same grape vinified bone dry is the region’s current cause. Further west, Kekfrankos carries the reds, including the blends sold as Bull’s Blood.',
+    description: 'Tokaj was the first wine region anywhere to be classified by vineyard, in 1730 — ahead of Bordeaux by well over a century. Its Aszu wines are made from Furmint berries shrivelled by botrytis, kneaded to a paste and measured out in puttonyos; the same grape vinified bone dry is the region’s current cause. Further west, Kadarka and Kekfrankos carry the reds, including the blends sold as Bull’s Blood.',
     category: 'COUNTRY_GATE',
     color: '#365314',
     icon: 'flag',
@@ -837,7 +837,7 @@ export const COUNTRIES: CountryGateEntry[] = [
     details: {
       origin: 'Hungary',
       classification: 'COUNTRY',
-      keyRegions: ['Tokaj'],
+      keyRegions: ['Tokaj', 'Villány'],
       notableGrapes: ['Furmint', 'Hárslevelű', 'Kékfrankos']
     }
   },
@@ -867,8 +867,8 @@ export const COUNTRIES: CountryGateEntry[] = [
     details: {
       origin: 'Switzerland',
       classification: 'COUNTRY',
-      keyRegions: ['Valais'],
-      notableGrapes: ['Pinot Noir', 'Gamay', 'Merlot']
+      keyRegions: ['Valais', 'Lavaux'],
+      notableGrapes: ['Chasselas', 'Pinot Noir', 'Gamay']
     }
   },
   {
@@ -882,8 +882,8 @@ export const COUNTRIES: CountryGateEntry[] = [
     details: {
       origin: 'Romania',
       classification: 'COUNTRY',
-      keyRegions: ['Dealu Mare'],
-      notableGrapes: ['Cabernet Sauvignon', 'Merlot', 'Pinot Noir']
+      keyRegions: ['Dealu Mare', 'Târnave'],
+      notableGrapes: ['Fetească Neagră', 'Fetească Albă', 'Fetească Regală']
     }
   },
   {
@@ -919,7 +919,7 @@ export const COUNTRIES: CountryGateEntry[] = [
   {
     id: 'C012',
     name: 'USA',
-    description: 'The United States is the world’s fourth-largest producer, and California accounts for the overwhelming majority of it. Napa built its name on Cabernet Sauvignon and Sonoma on Pinot Noir and Chardonnay; Oregon’s Willamette Valley and New York’s Finger Lakes are the cool-climate counterweights, and Washington’s Columbia Valley the high-desert one. An AVA delimits a place and nothing else — it sets no rules about grape, yield or method.',
+    description: 'The United States is the world’s fourth-largest producer, and California accounts for the overwhelming majority of it. Napa built its name on Cabernet Sauvignon and Sonoma on Pinot Noir and Chardonnay; Oregon’s Willamette Valley and New York’s Finger Lakes are the cool-climate counterweights, Washington’s Columbia Valley the high-desert one, and the Upper Midwest grows its own bred-in-Minnesota hybrids like Marquette where vinifera cannot survive the winter. An AVA delimits a place and nothing else — it sets no rules about grape, yield or method.',
     category: 'COUNTRY_GATE',
     color: '#1e1b4b',
     icon: 'flag',
@@ -987,7 +987,7 @@ export const COUNTRIES: CountryGateEntry[] = [
     details: {
       origin: 'Uruguay',
       classification: 'COUNTRY',
-      keyRegions: ['Canelones'],
+      keyRegions: ['Canelones', 'Maldonado'],
       notableGrapes: ['Tannat', 'Cabernet Sauvignon', 'Merlot']
     }
   },
@@ -1092,7 +1092,7 @@ export const COUNTRIES: CountryGateEntry[] = [
     details: {
       origin: 'Morocco',
       classification: 'COUNTRY',
-      keyRegions: ['Guerrouane'],
+      keyRegions: ['Guerrouane', 'Zenata'],
       notableGrapes: ['Syrah', 'Cabernet Sauvignon', 'Chardonnay']
     }
   },
@@ -1107,7 +1107,7 @@ export const COUNTRIES: CountryGateEntry[] = [
     details: {
       origin: 'Croatia',
       classification: 'COUNTRY',
-      keyRegions: ['Dalmatia'],
+      keyRegions: ['Dalmatia', 'Istria', 'Slavonia'],
       notableGrapes: ['Zinfandel', 'Babić']
     }
   },
@@ -1122,7 +1122,7 @@ export const COUNTRIES: CountryGateEntry[] = [
     details: {
       origin: 'Mexico',
       classification: 'COUNTRY',
-      keyRegions: ['Valle de Guadalupe'],
+      keyRegions: ['Valle de Guadalupe', 'Parras Valley'],
       notableGrapes: ['Nebbiolo', 'Tempranillo', 'Cabernet Sauvignon']
     }
   },
@@ -1152,7 +1152,7 @@ export const COUNTRIES: CountryGateEntry[] = [
   {
     id: 'C025',
     name: 'United Kingdom',
-    description: 'England\'s chalk downs share their geology with Champagne, and a warming climate has turned that from trivia into a sparkling-wine industry the French now invest in. Sussex and Kent lead with traditional-method fizz from Chardonnay, Pinot Noir and Pinot Meunier. Regions coming soon.',
+    description: 'England\'s chalk downs share their geology with Champagne, and a warming climate has turned that from trivia into a sparkling-wine industry the French now invest in. Sussex and Kent lead with traditional-method fizz from Chardonnay, Pinot Noir and Pinot Meunier, while Bacchus has become the signature still white.',
     category: 'COUNTRY_GATE',
     color: '#1e3a8a',
     icon: 'flag',
@@ -1160,14 +1160,14 @@ export const COUNTRIES: CountryGateEntry[] = [
     details: {
       origin: 'United Kingdom',
       classification: 'COUNTRY',
-      keyRegions: [],
+      keyRegions: ['Sussex', 'Kent'],
       notableGrapes: ['Chardonnay', 'Pinot Noir', 'Pinot Meunier']
     }
   },
   {
     id: 'C026',
     name: 'Slovenia',
-    description: 'Slovenia sits where the Alps, the Adriatic and the Pannonian plain meet, and its wines have been quietly excellent for centuries — the world\'s oldest living grapevine grows in Maribor. Orange wine as a modern movement largely started here, on the Italian border. Regions coming soon.',
+    description: 'Slovenia sits where the Alps, the Adriatic and the Pannonian plain meet, and its wines have been quietly excellent for centuries — the world\'s oldest living grapevine grows in Maribor. Orange wine as a modern movement largely started here, on the Italian border.',
     category: 'COUNTRY_GATE',
     color: '#0e7490',
     icon: 'flag',
@@ -1175,14 +1175,14 @@ export const COUNTRIES: CountryGateEntry[] = [
     details: {
       origin: 'Slovenia',
       classification: 'COUNTRY',
-      keyRegions: [],
-      notableGrapes: ['Sauvignon Blanc', 'Merlot']
+      keyRegions: ['Goriška Brda', 'Vipava Valley'],
+      notableGrapes: ['Zelen', 'Pinela', 'Sauvignon Blanc']
     }
   },
   {
     id: 'C027',
     name: 'Bulgaria',
-    description: 'Bulgaria was once the world\'s second-largest wine exporter, filling 1980s shelves with affordable Cabernet. The old bulk machine is gone; what remains are warm valleys, native reds like Mavrud and Melnik, and a new generation bottling them seriously. Regions coming soon.',
+    description: 'Bulgaria was once the world\'s second-largest wine exporter, filling 1980s shelves with affordable Cabernet. The old bulk machine is gone; what remains are warm valleys, native reds like Mavrud and Melnik, and a new generation bottling them seriously.',
     category: 'COUNTRY_GATE',
     color: '#166534',
     icon: 'flag',
@@ -1190,14 +1190,14 @@ export const COUNTRIES: CountryGateEntry[] = [
     details: {
       origin: 'Bulgaria',
       classification: 'COUNTRY',
-      keyRegions: [],
-      notableGrapes: ['Cabernet Sauvignon', 'Merlot']
+      keyRegions: ['Thracian Lowlands', 'Struma Valley'],
+      notableGrapes: ['Mavrud', 'Melnik', 'Cabernet Sauvignon']
     }
   },
   {
     id: 'C028',
     name: 'Lebanon',
-    description: 'Lebanese wine has survived every century thrown at it: the Bekaa Valley has grown vines for five thousand years, and Chateau Musar\'s cedar-scented reds became a cult through a civil war. High-altitude Cinsault and Cabernet under relentless mountain sun. Regions coming soon.',
+    description: 'Lebanese wine has survived every century thrown at it: the Bekaa Valley has grown vines for five thousand years, and Chateau Musar\'s cedar-scented reds became a cult through a civil war. High-altitude Cinsault and Cabernet under relentless mountain sun, with the ancient native whites Obaideh and Merwah holding the heights.',
     category: 'COUNTRY_GATE',
     color: '#7f1d1d',
     icon: 'flag',
@@ -1205,8 +1205,68 @@ export const COUNTRIES: CountryGateEntry[] = [
     details: {
       origin: 'Lebanon',
       classification: 'COUNTRY',
-      keyRegions: [],
-      notableGrapes: ['Cinsault', 'Cabernet Sauvignon']
+      keyRegions: ['Bekaa Valley', 'Batroun'],
+      notableGrapes: ['Obaideh', 'Merwah', 'Cinsault']
+    }
+  },
+  {
+    id: 'C030',
+    name: 'Moldova',
+    description: 'Moldova has more vineyard per person than any country on earth, and beneath it the largest wine cellars in existence: the galleries of Mile\u0219tii Mici and Cricova run for hundreds of kilometres through old limestone mines. Purcari\u2019s dark Negru blend won gold in Paris in 1878; today the Feteasc\u0103 family and Rar\u0103 Neagr\u0103 carry a native revival out from under the Soviet bulk-wine decades.',
+    category: 'COUNTRY_GATE',
+    color: '#1e40af',
+    icon: 'flag',
+    tags: ['DOP', 'IGP', 'COUNTRY'],
+    details: {
+      origin: 'Moldova',
+      classification: 'COUNTRY',
+      keyRegions: ['Codru', '\u0218tefan Vod\u0103'],
+      notableGrapes: ['Feteasc\u0103 Alb\u0103', 'Feteasc\u0103 Neagr\u0103', 'Rar\u0103 Neagr\u0103']
+    }
+  },
+  {
+    id: 'C031',
+    name: 'Armenia',
+    description: 'Armenia holds the oldest winery ever found: a complete press, jars and fermentation vats some 6,100 years old in the Areni-1 cave of Vayots Dzor. A century in brandy\u2019s shadow ended in the 2010s, and now high-altitude, ungrafted Areni and golden Voskehat ferment in buried clay karas the way the region always did, at vineyards above 1,400 metres.',
+    category: 'COUNTRY_GATE',
+    color: '#c2410c',
+    icon: 'flag',
+    tags: ['GI', 'COUNTRY'],
+    details: {
+      origin: 'Armenia',
+      classification: 'COUNTRY',
+      keyRegions: ['Vayots Dzor', 'Aragatsotn'],
+      notableGrapes: ['Areni', 'Voskehat', 'Rkatsiteli']
+    }
+  },
+  {
+    id: 'C032',
+    name: 'Cyprus',
+    description: 'Cyprus makes the oldest named wine still in production: Commandaria, the sun-dried amber sweet praised at Richard the Lionheart\u2019s wedding in 1191 and named for the Crusader commandery at Kolossi. Phylloxera never reached the island, so Xynisteri and Mavro still grow on their own roots, climbing the Troodos to some of Europe\u2019s highest vineyards.',
+    category: 'COUNTRY_GATE',
+    color: '#a16207',
+    icon: 'flag',
+    tags: ['PDO', 'PGI', 'COUNTRY'],
+    details: {
+      origin: 'Cyprus',
+      classification: 'COUNTRY',
+      keyRegions: ['Commandaria', 'Pitsilia'],
+      notableGrapes: ['Xynisteri', 'Mavro', 'Maratheftiko']
+    }
+  },
+  {
+    id: 'C033',
+    name: 'Turkey',
+    description: 'Anatolia has grown vines for eight thousand years and still holds one of the largest vineyard areas on earth, though most of it is eaten or dried rather than fermented. The wine that is made leans on natives with real character: Öküzgözü bright and cherried, Boğazkere ferociously tannic — the two blended are the country\'s classic red — Narince\'s quince-scented whites from Tokat, and Emir own-rooted in Cappadocia\'s volcanic tuff. Producers work under registered geographical indications rather than a European appellation law.',
+    category: 'COUNTRY_GATE',
+    color: '#b91c1c',
+    icon: 'flag',
+    tags: ['GI', 'COUNTRY'],
+    details: {
+      origin: 'Turkey',
+      classification: 'COUNTRY',
+      keyRegions: ['Cappadocia', 'Elazığ'],
+      notableGrapes: ['Öküzgözü', 'Boğazkere', 'Narince']
     }
   }
 ];

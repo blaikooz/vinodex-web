@@ -7,6 +7,7 @@ const BUTTON_DIR = path.resolve(__dirname, '../../public/art/button');
 
 const IOS_BUTTON_ART = [
   'backarrow.png',
+  'backup.png',
   'blindtasting.png',
   'camera.png',
   'cheatcodes.png',
@@ -21,11 +22,22 @@ const IOS_BUTTON_ART = [
   'grapes.png',
   'haptics.png',
   'home.png',
+  'keepawake.png',
   'labelscanner.png',
+  'load.png',
+  'moonday-drink.png',
+  'moonday-flower.png',
+  'moonday-fruit.png',
+  'moonday-hold.png',
+  'moonday-leaf.png',
+  'moonday-root.png',
   'moondial.png',
   'numberedstack.png',
   'passport.png',
+  'profvino.png',
   'regions.png',
+  'restore.png',
+  'save.png',
   'search.png',
   'settings.png',
   'shop.png',
@@ -39,6 +51,11 @@ const IOS_BUTTON_ART = [
   'workshop.png',
 ];
 
+// Twelve sprites joined with the iOS 0.9.44-0.9.53 art sync (2026-09-09):
+// the MOONDAY set, the profile SAVE/LOAD/BACKUP/RESTORE glyphs, KEEP AWAKE
+// and Prof. Vino's own button. They arrive through sync-shared's one-way
+// Resources -> public/art leg, so this pin moving is the sync being recorded,
+// never a web-side addition.
 describe('iOS ButtonArt mirror', () => {
   it('contains the complete canonical button-art set with no web-only strays', () => {
     const files = fs.readdirSync(BUTTON_DIR).filter(file => file.endsWith('.png')).sort();

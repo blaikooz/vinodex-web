@@ -97,7 +97,7 @@ describe('the authored-bar merge', () => {
    * migrated.
    */
   it('authors exactly the two bars that carried no information, on every grape', () => {
-    expect(GRAPES.length).toBe(177);
+    expect(GRAPES.length).toBe(221);
     const authoredKeys = new Set<string>();
     let withAuthored = 0;
     for (const g of GRAPES) {
@@ -105,7 +105,7 @@ describe('the authored-bar merge', () => {
       withAuthored += 1;
       for (const k of Object.keys(g.characteristics)) authoredKeys.add(k);
     }
-    expect(withAuthored, 'every grape should author its bars').toBe(177);
+    expect(withAuthored, 'every grape should author its bars').toBe(221);
     expect([...authoredKeys].sort()).toEqual(['aromatics', 'colorIntensity']);
   });
 });

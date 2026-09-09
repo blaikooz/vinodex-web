@@ -118,10 +118,12 @@ const wrongAnswerFor = (p: ExamPrompt): ExamAnswer => {
 
 describe('the bank', () => {
   it('holds the questions it was authored to', () => {
-    expect(EXAM_QUESTIONS.length).toBe(420);
-    expect(capacity('beginner')).toBe(144);
-    expect(capacity('intermediate')).toBe(151);
-    expect(capacity('advanced')).toBe(125);
+    // +17 with the iOS 0.9.44-0.9.53 catch-up: questions for the six new
+    // styles and the four new countries (2026-09-09).
+    expect(EXAM_QUESTIONS.length).toBe(437);
+    expect(capacity('beginner')).toBe(151);
+    expect(capacity('intermediate')).toBe(157);
+    expect(capacity('advanced')).toBe(129);
   });
 
   it('every question id is unique', () => {
@@ -130,7 +132,7 @@ describe('the bank', () => {
   });
 
   it('the shipped cell floor matches the live pools', () => {
-    expect(EXAM_MIN_CELL_COUNT).toBe(6);
+    expect(EXAM_MIN_CELL_COUNT).toBe(7);
     for (const tier of EXAM_TIERS) {
       expect(thinnestCell(tier), `${tier} has a cell below the shipped floor`).toBeGreaterThanOrEqual(EXAM_MIN_CELL_COUNT);
     }
@@ -144,8 +146,8 @@ describe('the bank', () => {
   it('the format mix is what the bank was authored to', () => {
     const counts = new Map<ExamFormat, number>();
     for (const q of EXAM_QUESTIONS) counts.set(q.format, (counts.get(q.format) ?? 0) + 1);
-    expect(counts.get('multipleChoice')).toBe(246);
-    expect(counts.get('trueFalse')).toBe(64);
+    expect(counts.get('multipleChoice')).toBe(262);
+    expect(counts.get('trueFalse')).toBe(65);
     expect(counts.get('selectAll')).toBe(37);
     expect(counts.get('aromaIdentification')).toBe(23);
     expect(counts.get('matching')).toBe(21);

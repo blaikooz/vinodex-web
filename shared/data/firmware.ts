@@ -61,6 +61,211 @@ import type { FirmwareRelease } from '../types';
  * each batch a name, which is the file's entire job.
  */
 const CURRENT: FirmwareRelease = {
+  version: "0.9.53",
+  date: "2026-09-08",
+  headline: "READ ALL ABOUT IT",
+  notes: [
+    "Every info section reads itself aloud at a tap, in a real narrator's voice: grapes, regions, styles, flavours, countries and continents.",
+    "All one hundred and six flavours carry unique authored entries: what each is, how it reaches the wine, and one grape that carries it.",
+    "The last twenty-nine styles sit for portraits: thirty-eight of thirty-nine bottles pictured, with GSM Blend abstaining by design.",
+    "The label reader keeps a bottle journal: producer, vintage and place, logged as cards on your SCANNED shelf.",
+    "Body weighs in on a smithy scale: feather, laden pan, balance, hammer and anvil.",
+    "Bulgaria, Moldova, Armenia, Cyprus and Turkey trade rough outlines for true coastlines drawn from real map data.",
+    "Master search locks its bar in place with the filters folded behind the slider icon, and firmware history folds into families.",
+    "Repairs on the walk: the plums sat for new portraits, Cava lost its ghosts, Cru Beaujolais pours red, and icons stand at one true scale.",
+  ],
+};
+
+const PREVIOUS_0952: FirmwareRelease = {
+  version: "0.9.52",
+  date: "2026-09-07",
+  headline: "THE GREAT REPASS",
+  notes: [
+    "One hundred and fifty-eight icons regenerated on the key: every flavour portrait, every taxonomy face, every soil, climate and continent.",
+    "The white halos that haunted the early art are gone; whites now live inside their outlines, where they belong.",
+    "The florals led the way; the citrus, berries, spices, minerals and earths follow in the same hand.",
+  ],
+};
+
+const PREVIOUS_0951: FirmwareRelease = {
+  version: "0.9.51",
+  date: "2026-09-07",
+  headline: "THE FINAL POUR",
+  notes: [
+    "Fourteen grapes join, from Armenia's Areni kin to Turkey's Okuzgozu, with the first two French-American hybrids honestly labelled.",
+    "Turkey opens: flag, outline, Cappadocia and Elazig, and a new ASIA cartridge on the atlas.",
+    "The search bar rides pinned above every list, with the filter folded behind an icon at its right.",
+    "A fourth shelf, SCANNED: every wine the label reader matches is logged, on your USER page and on its own entry.",
+    "The globe turns again.",
+    "The six Batch B styles sit for real portraits, and five new cluster masters give sixteen grapes their true elongated silhouette.",
+    "The exam grows sixteen questions; eight country gates now lead with their own natives.",
+    "510 becomes 529: 221 grapes, 157 regions, 39 styles, 106 flavours, 34 countries.",
+  ],
+};
+
+const PREVIOUS_0950: FirmwareRelease = {
+  version: "0.9.50",
+  date: "2026-09-07",
+  headline: "HONEST LEAVES",
+  notes: [
+    "Riesling wears gold again: the rarity ink now paints only the leaf, never a golden bunch mistaken for one.",
+    "The GODFORSAKEN gnarl ripens in its grape's own colour: sickly green for the whites, blue-black for the dark.",
+  ],
+};
+
+const PREVIOUS_0949: FirmwareRelease = {
+  version: "0.9.49",
+  date: "2026-09-07",
+  headline: "NEW SHELVES",
+  notes: [
+    "Twenty grapes join the shelf, from Greece's Malagousia to Armenia's Areni and the two Fetescas of Romania.",
+    "Six styles open their pages: Vin Jaune, Tokaji Aszu, Retsina, Passito, Marsala and Commandaria.",
+    "Moldova, Armenia and Cyprus raise their flags, outlines drawn, with thirteen new regions from Eger to Patagonia.",
+    "510 entries: 207 grapes, 152 regions, 39 styles, 106 flavours, 33 countries.",
+  ],
+};
+
+const PREVIOUS_0948: FirmwareRelease = {
+  version: "0.9.48",
+  date: "2026-09-07",
+  headline: "TRUE TO THE VINE",
+  notes: [
+    "Dark grapes now hang blue-black under bloom, the way real fruit ripens: no wine grape has red berries.",
+    "Golden-fruited whites go gold on the vine's own evidence: Semillon, Ribolla Gialla, Garganega and Chasselas.",
+    "Pedro Ximenez turns green: its amber comes from the drying yard, not the vine.",
+    "Koshu and Moschofilero blush their true grey-pink, Roussanne turns russet, and the three dyer grapes go teinturier dark.",
+    "The triangle bunches are retired: sixteen grapes move to shapes the ampelographies actually describe.",
+  ],
+};
+
+const PREVIOUS_0947: FirmwareRelease = {
+  version: "0.9.47",
+  date: "2026-09-07",
+  headline: "EVERY GRAPE ITS FACE",
+  notes: [
+    "Twenty-three grapes are drawn as themselves at last, from Pinot Noir's tight pinecone to Nebbiolo's fog-dusted pyramid.",
+    "Every other grape wears a real cluster shape from the ampelography books instead of the one shared bunch.",
+    "The GODFORSAKEN eighteen share a gnarled bunch with a withered raisin, as is their right.",
+    "Cava, Madeira and Cremant sit for real portraits, retiring their borrowed champagne flutes.",
+    "Ten flavours that shared a picture get their own: every flavour in the book is now illustrated.",
+    "The gris family's leaf obeys the seasons again, so its rarity colour reads true.",
+  ],
+};
+
+const PREVIOUS_0946: FirmwareRelease = {
+  version: "0.9.46",
+  date: "2026-09-07",
+  headline: "THE FLAGS COME HOME",
+  notes: [
+    "The pixel flags return, by kind permission of the R74n collective.",
+    "Their credit line flies at the foot of this screen, where a flag's credit belongs.",
+  ],
+};
+
+const PREVIOUS_0945: FirmwareRelease = {
+  version: "0.9.45",
+  date: "2026-09-01",
+  headline: "MEET VINOBOT",
+  notes: [
+    "The professor is a robot now, and his name is VINOBOT -- same cork hat, same opinions.",
+    "His page is a conversation: tap his questions, hear about TODAY, ask about THIS DEVICE.",
+    "His one-time tips are replayable at last, from his own screen.",
+    "Quiet mode is something you tell him, and he answers in character.",
+    "MY PICKS: he presents your recommendations with the reason your shelf earned them.",
+    "STUDY: he names your weakest exam category and sends you to the next paper.",
+    "Unlocking an exam tier earns a certificate, handed over by the examiner himself.",
+    "VINOBOT'S TAKE: one line of his opinion on every grape, region, style and flavour page, read aloud on request in his own voice.",
+    "He greets each day once: the moon's ruling, and any streak worth a word.",
+    "A pass over all his older lines: one voice, no dashes, no stale promises.",
+    "Madeira and Cava, struck off in error, are reinstated with apologies.",
+    "Ten new grapes join the shelf: Mavrud, Melnik, Zelen, Teran, Chasselas and five more from the seams of the map.",
+    "The walkthrough starts you on Pinot Noir and scrolls him into view, and every step now has NEXT and QUIT.",
+    "CLEAR SAVED DATA now closes the app after wiping, so the next launch is a true fresh start.",
+  ],
+};
+
+const PREVIOUS_0944: FirmwareRelease = {
+  version: "0.9.44",
+  date: "2026-09-01",
+  headline: "TRUE COLOURS",
+  // The catch-up release: five firmwares shipped in one day (0.9.3 through
+  // 0.9.43, below) while this history stood still at 0.9.2, and the icons
+  // that arrived in 0.9.43 rendered as single-colour silhouettes where the
+  // maintainer wanted the drawn art itself.
+  notes: [
+    "This history caught up: the five firmwares below shipped before their notes did.",
+    "The moon dial's day and verdict faces, the SAVE, LOAD, BACK UP and RESTORE buttons and the photo badge now show their drawn art in full colour.",
+    "Blends and crossings fly a pennant of their own instead of a grey blank.",
+  ],
+};
+
+const PREVIOUS_0943: FirmwareRelease = {
+  version: "0.9.43",
+  date: "2026-08-31",
+  headline: "THE ICON DROP",
+  notes: [
+    "Fifteen drawn faces across the device, from the marquee to the settings rows.",
+    "Professor Vino's new robot portrait fronts his tile on the tools shelf.",
+    "SAVE, LOAD, BACK UP and RESTORE each get a face of their own.",
+    "The moon dial draws its own grapes, blossom, leaf and root -- and a wine glass or a raised hand for the verdict.",
+    "Marquee page glyphs are a quarter larger, in the panel's own ink.",
+    "The photo badge on the USER screen wears the drawn camera.",
+  ],
+};
+
+const PREVIOUS_0942: FirmwareRelease = {
+  version: "0.9.42",
+  date: "2026-08-31",
+  headline: "NEW WORLDS",
+  notes: [
+    "Fifteen new regions: Bulgaria, Lebanon, Slovenia and the United Kingdom open their first pages, and seven one-region countries gain a second.",
+    "Bulgaria's outline joins the atlas.",
+    "Madeira and Cava leave the style shelf; the exam still teaches both wines from the places that make them.",
+    "A rank earned by scanning bottles celebrates on the spot instead of waiting for the passport.",
+    "The screensaver toast sits truly centred through its fade.",
+    "459 entries: 177 grapes, 139 regions, 31 styles, 106 flavours, 30 countries.",
+  ],
+};
+
+const PREVIOUS_0941: FirmwareRelease = {
+  version: "0.9.41",
+  date: "2026-08-31",
+  headline: "SMALL STEPS",
+  notes: [
+    "US region scans show their STATE under COUNTRY, flag and all.",
+    "Twelve emblem flags redrawn -- Japan's sun is round, Canada's leaf has lobes, Mexico's eagle has a head.",
+    "Profiles start blank: five empty slots, your own names.",
+    "Professor Vino's page slims to the professor and his switch.",
+    "The back of the device is reached the way it was designed to be: hold the orb.",
+  ],
+};
+
+const PREVIOUS_0904: FirmwareRelease = {
+  version: "0.9.4",
+  date: "2026-08-31",
+  headline: "SHIP SHAPE",
+  notes: [
+    "The storefront comes off the shell until there is a till behind it; nothing on the device is for sale.",
+    "CUSTOMIZE carries the classic shells and the classic screens; the themed shelves wait with the shop.",
+    "The cheat console and the developer panel leave the settings.",
+    "Every flag on the device is our own pixel art, Brazil included.",
+    "Continent pages list the countries that have pages -- no more promises.",
+    "SETTINGS takes the wide row of the system grid.",
+  ],
+};
+
+const PREVIOUS_0903: FirmwareRelease = {
+  version: "0.9.3",
+  date: "2026-08-31",
+  headline: "SHARED HARVEST",
+  notes: [
+    "Every grape's characteristics bars are authored by hand, all 177 of them.",
+    "Mallorca's Manto Negro arrives with its lineage.",
+    "The mirror and the master agree, in both directions.",
+  ],
+};
+
+const PREVIOUS_0902: FirmwareRelease = {
   version: "0.9.2",
   date: "2026-08-13",
   headline: "ORIGINAL NAMES",
@@ -225,6 +430,21 @@ const PREVIOUS_0892: FirmwareRelease = {
 };
 
 const PREVIOUS: FirmwareRelease[] = [
+  PREVIOUS_0952,
+  PREVIOUS_0951,
+  PREVIOUS_0950,
+  PREVIOUS_0949,
+  PREVIOUS_0948,
+  PREVIOUS_0947,
+  PREVIOUS_0946,
+  PREVIOUS_0945,
+  PREVIOUS_0944,
+  PREVIOUS_0943,
+  PREVIOUS_0942,
+  PREVIOUS_0941,
+  PREVIOUS_0904,
+  PREVIOUS_0903,
+  PREVIOUS_0902,
   PREVIOUS_0901,
   PREVIOUS_0900,
   PREVIOUS_0899,

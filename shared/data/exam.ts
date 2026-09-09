@@ -301,7 +301,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Cabernet Sauvignon', 'Pinot Noir', 'Gamay', 'Albarino'],
     answerIndex: 0,
     explanation: 'Blackcurrant is Cabernet Sauvignon\'s fruit signature; cedar and spice arrive with the oak barrels it is almost always aged in. Pinot Noir and Gamay run to red fruit, and Albarino is a coastal white.',
-    entryRefs: ['G001'],
+    entryRefs: ['G001', 'FLAVOR-BLACKCURRANT', 'FLAVOR-CEDAR', 'FLAVOR-SPICE'],
   },
   {
     id: 'EXQ-GRP-006', tier: 'beginner', category: 'GRAPES', format: 'multipleChoice',
@@ -431,7 +431,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Viognier', 'Torrontes', 'Gewurztraminer', 'Moschofilero'],
     answerIndex: 2,
     explanation: 'Lychee is Gewurztraminer\'s fingerprint - few other varieties produce it - and the rose and spice come from the same terpene-rich aromatic profile. Torrontes and Moschofilero are also rose-scented, which is why they make good distractors, but neither gives lychee.',
-    entryRefs: ['G026', 'G024', 'G081', 'G015'],
+    entryRefs: ['G026', 'G024', 'G081', 'G015', 'FLAVOR-LYCHEE', 'FLAVOR-ROSE', 'FLAVOR-GINGER'],
   },
   {
     id: 'EXQ-GRP-021', tier: 'intermediate', category: 'GRAPES', format: 'trueFalse',
@@ -1299,7 +1299,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Chardonnay', 'Sauvignon Blanc', 'Viognier', 'Semillon'],
     answerIndex: 1,
     explanation: 'That green, pungent trio is Sauvignon Blanc\'s calling card, most exaggerated in Marlborough. Chardonnay runs to orchard and tropical fruit, Viognier to apricot and blossom, Semillon to lemon and wax.',
-    entryRefs: ['G006'],
+    entryRefs: ['G006', 'FLAVOR-LIME', 'FLAVOR-GOOSEBERRY', 'FLAVOR-GRASS'],
   },
   {
     id: 'EXQ-FLV-002', tier: 'beginner', category: 'FLAVOR_PROFILES', format: 'aromaIdentification',
@@ -1308,7 +1308,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Pinot Noir', 'Cabernet Sauvignon', 'Malbec', 'Tannat'],
     answerIndex: 0,
     explanation: 'Pinot Noir is defined by red cherry over an earthy, forest-floor base, with a floral lift. The other three are all dark, dense and firmly tannic - a different family of wine altogether.',
-    entryRefs: ['G002'],
+    entryRefs: ['G002', 'FLAVOR-CHERRY', 'FLAVOR-EARTH', 'FLAVOR-FLORAL'],
   },
   {
     id: 'EXQ-FLV-003', tier: 'beginner', category: 'FLAVOR_PROFILES', format: 'multipleChoice',
@@ -1330,7 +1330,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Merlot', 'Syrah', 'Grenache', 'Barbera'],
     answerIndex: 1,
     explanation: 'Black pepper over dark berry fruit is Syrah\'s signature, especially from cooler sites in the northern Rhone. Merlot runs to plum and chocolate, Grenache to red berries and warmth, Barbera to sour cherry and high acid.',
-    entryRefs: ['G005'],
+    entryRefs: ['G005', 'FLAVOR-BLACKBERRY', 'FLAVOR-PEPPER', 'FLAVOR-SMOKE'],
   },
   {
     id: 'EXQ-FLV-006', tier: 'beginner', category: 'FLAVOR_PROFILES', format: 'multipleChoice',
@@ -1386,7 +1386,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Chenin Blanc', 'Chardonnay', 'Albarino', 'Verdejo'],
     answerIndex: 0,
     explanation: 'Chenin Blanc\'s combination of piercing acidity with honeyed, waxy, chamomile-scented fruit is unusual and is why it can be made bone dry, sweet or sparkling from the same vineyard. Vouvray and Savennieres are the classic references.',
-    entryRefs: ['G014', 'R005'],
+    entryRefs: ['G014', 'R005', 'FLAVOR-QUINCE', 'FLAVOR-HONEY', 'FLAVOR-CHAMOMILE'],
   },
   {
     id: 'EXQ-FLV-012', tier: 'intermediate', category: 'FLAVOR_PROFILES', format: 'multipleChoice',
@@ -1394,6 +1394,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['New American oak', 'Diacetyl formed during malolactic conversion', 'Extended skin contact', 'Botrytis'],
     answerIndex: 1,
     explanation: 'Malolactic conversion turns sharp malic acid into softer lactic acid and produces diacetyl as a by-product - the same compound that makes butter smell like butter. Winemakers can block it, partially allow it, or stir the lees to modulate it.',
+    entryRefs: ['FLAVOR-BUTTER'],
   },
   {
     id: 'EXQ-FLV-013', tier: 'intermediate', category: 'FLAVOR_PROFILES', format: 'aromaIdentification',
@@ -1402,7 +1403,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Agiorgitiko', 'Xinomavro', 'Moschofilero', 'Nerello Mascalese'],
     answerIndex: 1,
     explanation: 'Xinomavro - the name means "acid black" - gives pale colour with formidable tannin and acid, and a savoury tomato-and-olive register that fools tasters into calling Nebbiolo. Agiorgitiko is far softer and rounder.',
-    entryRefs: ['G063', 'G064', 'R067'],
+    entryRefs: ['G063', 'G064', 'R067', 'FLAVOR-SOUR-CHERRY', 'FLAVOR-TOMATO-LEAF', 'FLAVOR-OLIVE'],
   },
   {
     id: 'EXQ-FLV-014', tier: 'intermediate', category: 'FLAVOR_PROFILES', format: 'trueFalse',
@@ -1410,6 +1411,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     answer: false,
     explanation: 'Vines do not transport rock flavour into the glass; the compounds involved are mostly not minerals at all. "Mineral" is a useful shorthand for a family of sensations - saline, chalky, flinty, sometimes reductive - but it has no agreed chemical definition, and honest tasting notes treat it as description rather than explanation.',
     source: 'Oxford Companion to Wine, minerality',
+    entryRefs: ['FLAVOR-MINERAL'],
   },
   {
     id: 'EXQ-FLV-015', tier: 'intermediate', category: 'FLAVOR_PROFILES', format: 'selectAll',
@@ -1434,7 +1436,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Nero d\'Avola', 'Nerello Mascalese', 'Frappato', 'Negroamaro'],
     answerIndex: 1,
     explanation: 'Nerello Mascalese on Etna gives pale, high-acid, smoky reds that read as far more northern than their latitude. Nero d\'Avola and Negroamaro are dark and warm; Frappato is pale but sweetly strawberry-scented rather than ashy.',
-    entryRefs: ['G077', 'R073'],
+    entryRefs: ['G077', 'R073', 'FLAVOR-VOLCANIC-ASH', 'FLAVOR-RED-CHERRY', 'FLAVOR-DRIED-HERBS'],
   },
   {
     id: 'EXQ-FLV-018', tier: 'advanced', category: 'FLAVOR_PROFILES', format: 'multipleChoice',
@@ -1490,7 +1492,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     answerIndex: 1,
     explanation: 'Savagnin aged sous voile in the Jura develops nutty, curry-like sotolon character under a film of yeast, in a process comparable to Sherry\'s flor. Chablis Chardonnay can be flinty and mineral but never nutty in this way unless it is faulty.',
     source: 'Wine Grapes; AOC Chateau-Chalon cahier des charges',
-    entryRefs: ['G084', 'R012'],
+    entryRefs: ['G084', 'R012', 'FLAVOR-GREEN-APPLE', 'FLAVOR-HAZELNUT', 'FLAVOR-SALINE'],
   },
   {
     id: 'EXQ-FLV-023', tier: 'advanced', category: 'FLAVOR_PROFILES', format: 'trueFalse',
@@ -2667,7 +2669,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Italy', 'Portugal', 'Spain', 'France'],
     answerIndex: 2,
     explanation: 'Cava is Spanish, made by the traditional method and centred on Penedes in Catalonia, though the DO covers several other areas. Its classic blend is Macabeo, Xarel-lo and Parellada.',
-    entryRefs: ['R102', 'G143', 'G126', 'G144'],
+    entryRefs: ['R102', 'G143', 'G126', 'G144', 'S034'],
   },
   {
     id: 'EXQ-SPK-007', tier: 'beginner', category: 'SPARKLING', format: 'selectAll',
@@ -2675,7 +2677,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Champagne', 'Cava', 'Prosecco', 'Cremant', 'Franciacorta'],
     answerIndices: [0, 1, 3, 4],
     explanation: 'Champagne, Cava, Cremant and Franciacorta all ferment a second time in the bottle you buy. Prosecco is the great exception among the famous names - it is made in tank, which is exactly why it tastes of fresh pear rather than bread.',
-    entryRefs: ['S009', 'S024', 'S025', 'R102', 'R109'],
+    entryRefs: ['S009', 'S024', 'S025', 'R102', 'R109', 'S034'],
   },
   {
     id: 'EXQ-SPK-008', tier: 'intermediate', category: 'SPARKLING', format: 'multipleChoice',
@@ -2776,7 +2778,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     answerIndex: 1,
     explanation: 'Reserva requires eighteen months, Gran Reserva thirty, and Cava de Paraje Calificado - a single-site category - thirty-six. Baseline Cava de Guarda needs nine. All Cava de Guarda Superior must also come from certified organic vineyards.',
     source: 'Consejo Regulador DO Cava, categories and types',
-    entryRefs: ['R102'],
+    entryRefs: ['R102', 'S034'],
   },
   {
     id: 'EXQ-SPK-017', tier: 'advanced', category: 'SPARKLING', format: 'multipleChoice',
@@ -3594,7 +3596,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     ],
     answerIndex: 1,
     explanation: '"Green wine" means young wine, drunk soon after harvest. The DOC covers a substantial Atlantic-facing area and produces white, red and rose - the reds from Vinhao being dark, sharp and almost unknown outside the region.',
-    entryRefs: ['R037', 'G093', 'G172', 'G074'],
+    entryRefs: ['R037', 'G093', 'G172', 'G074', 'S041'],
   },
   {
     id: 'EXQ-APP-016', tier: 'intermediate', category: 'APPELLATIONS', format: 'matching',
@@ -3946,7 +3948,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Merlot', 'Nebbiolo', 'Sangiovese', 'Gamay'],
     answerIndex: 0,
     explanation: 'Merlot is the plush one: soft plum fruit, a chocolatey richness when ripe and oaked, and enough herbal edge to remind you it is a Bordeaux variety. Nebbiolo and Sangiovese are far more acidic and savoury, and Gamay far lighter.',
-    entryRefs: ['G004'],
+    entryRefs: ['G004', 'FLAVOR-PLUM', 'FLAVOR-CHOCOLATE', 'FLAVOR-HERBS'],
   },
   {
     id: 'EXQ-FLV-025', tier: 'beginner', category: 'FLAVOR_PROFILES', format: 'aromaIdentification',
@@ -3955,7 +3957,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Pinot Noir', 'Malbec', 'Barbera', 'Cabernet Franc'],
     answerIndex: 1,
     explanation: 'Blueberry is unusual as a dominant fruit note and points strongly at Malbec, particularly from Mendoza where altitude gives colour and depth without hardness. Cahors Malbec is more austere but keeps the same dark-fruit core.',
-    entryRefs: ['G012', 'R045'],
+    entryRefs: ['G012', 'R045', 'FLAVOR-BLUEBERRY', 'FLAVOR-COCOA', 'FLAVOR-PLUM'],
   },
   {
     id: 'EXQ-FLV-026', tier: 'intermediate', category: 'FLAVOR_PROFILES', format: 'aromaIdentification',
@@ -3964,7 +3966,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Verdejo', 'Godello', 'Albarino', 'Arinto'],
     answerIndex: 2,
     explanation: 'Albarino from Rias Baixas combines stone fruit weight with a salty, citrus-driven finish - the combination that makes it such a natural partner for shellfish. Godello is rounder and more mineral, Verdejo more fennel-scented, Arinto leaner.',
-    entryRefs: ['G027', 'R033'],
+    entryRefs: ['G027', 'R033', 'FLAVOR-APRICOT', 'FLAVOR-SEA-SALT', 'FLAVOR-GRAPEFRUIT'],
   },
   {
     id: 'EXQ-FLV-027', tier: 'intermediate', category: 'FLAVOR_PROFILES', format: 'aromaIdentification',
@@ -3974,7 +3976,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     answerIndex: 1,
     explanation: 'The vegetal green-pea note plus white pepper is Gruner Veltliner and very little else; the pepper is rotundone, the same compound found in cool-climate Syrah. Austrian Riesling is stonier and more citrus-and-peach.',
     source: 'Wood et al. (2008) on rotundone',
-    entryRefs: ['G028', 'R040'],
+    entryRefs: ['G028', 'R040', 'FLAVOR-GREEN-PEA', 'FLAVOR-WHITE-PEPPER', 'FLAVOR-LIME'],
   },
   {
     id: 'EXQ-FLV-028', tier: 'intermediate', category: 'FLAVOR_PROFILES', format: 'aromaIdentification',
@@ -3984,7 +3986,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     answerIndex: 1,
     explanation: 'Dill is the giveaway - whisky lactone from American oak, which Rioja used almost exclusively for generations. Combined with Tempranillo\'s dried-fig fruit and savoury tobacco, it is one of the most recognisable regional signatures in wine.',
     source: 'Oxford Companion to Wine, oak flavour compounds',
-    entryRefs: ['G011', 'R030'],
+    entryRefs: ['G011', 'R030', 'FLAVOR-FIG', 'FLAVOR-TOBACCO', 'FLAVOR-DILL'],
   },
   {
     id: 'EXQ-FLV-029', tier: 'advanced', category: 'FLAVOR_PROFILES', format: 'aromaIdentification',
@@ -3993,7 +3995,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Chinuri', 'Rkatsiteli', 'Tsolikouri', 'Mtsvane'],
     answerIndex: 1,
     explanation: 'Rkatsiteli is Georgia\'s workhorse white and the classic qvevri variety, giving quince and orchard fruit with a tea-leaf grip once it has spent months on skins. Chinuri and Tsolikouri are lighter and fresher; Mtsvane is more overtly floral.',
-    entryRefs: ['G047', 'R058', 'S026'],
+    entryRefs: ['G047', 'R058', 'S026', 'FLAVOR-QUINCE', 'FLAVOR-HERBAL-TEA', 'FLAVOR-HONEY'],
   },
   {
     id: 'EXQ-FLV-030', tier: 'advanced', category: 'FLAVOR_PROFILES', format: 'aromaIdentification',
@@ -4002,7 +4004,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Hunter Valley Semillon', 'Chablis Chardonnay', 'Rueda Verdejo', 'Alsace Pinot Gris'],
     answerIndex: 0,
     explanation: 'Hunter Valley Semillon is picked early at very low sugar, made without oak, and develops waxy, lanolin and toasty character over a decade or more in bottle. Nothing else in the wine world quite reproduces that combination of frailty when young and longevity in fact.',
-    entryRefs: ['G018', 'R080'],
+    entryRefs: ['G018', 'R080', 'FLAVOR-BEESWAX', 'FLAVOR-LANOLIN', 'FLAVOR-LEMON-CURD'],
   },
   {
     id: 'EXQ-BLD-021', tier: 'beginner', category: 'BLIND_TASTING', format: 'aromaIdentification',
@@ -4011,7 +4013,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['The Muscat family', 'The Cabernet family', 'The Pinot family', 'The Trebbiano family'],
     answerIndex: 0,
     explanation: 'Muscat is the most overtly grapey and floral of all varieties, thanks to a very high terpene content, and it smells sweet whether or not it is. Learning to separate aromatic sweetness from actual sugar on the palate is a core blind-tasting skill.',
-    entryRefs: ['G130', 'G025'],
+    entryRefs: ['G130', 'G025', 'FLAVOR-ORANGE-BLOSSOM', 'FLAVOR-PEACH', 'FLAVOR-HONEY'],
   },
   {
     id: 'EXQ-BLD-022', tier: 'beginner', category: 'BLIND_TASTING', format: 'aromaIdentification',
@@ -4020,7 +4022,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Grenache', 'Cabernet Sauvignon', 'Tannat', 'Sagrantino'],
     answerIndex: 0,
     explanation: 'Grenache gives red berry fruit, warmth from high alcohol and a peppery, garrigue-scented edge, with less colour and tannin than its reputation for power suggests. The other three are all dark and firmly structured.',
-    entryRefs: ['G010', 'R099'],
+    entryRefs: ['G010', 'R099', 'FLAVOR-STRAWBERRY', 'FLAVOR-RASPBERRY', 'FLAVOR-PEPPER'],
   },
   {
     id: 'EXQ-BLD-023', tier: 'intermediate', category: 'BLIND_TASTING', format: 'aromaIdentification',
@@ -4029,7 +4031,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Gamay', 'Mourvedre', 'Pinot Noir', 'Barbera'],
     answerIndex: 1,
     explanation: 'Mourvedre - Monastrell in Spain - is the savoury, gamey, tannic member of the southern French trio, and it needs real heat to ripen. Bandol is the reference. Gamay and Pinot Noir are far lighter, and Barbera is defined by acid rather than tannin.',
-    entryRefs: ['G019', 'R007', 'S020'],
+    entryRefs: ['G019', 'R007', 'S020', 'FLAVOR-BLACK-FRUIT', 'FLAVOR-GAME', 'FLAVOR-DRIED-HERBS'],
   },
   {
     id: 'EXQ-GRP-031', tier: 'beginner', category: 'GRAPES', format: 'aromaIdentification',
@@ -4038,7 +4040,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Chenin Blanc', 'Riesling', 'Chardonnay', 'Pinot Gris'],
     answerIndex: 1,
     explanation: 'Riesling holds lime and peach at very high acidity, and develops a distinctive petrol or kerosene note with age. No other major white variety carries that particular trio.',
-    entryRefs: ['G007'],
+    entryRefs: ['G007', 'FLAVOR-LIME', 'FLAVOR-PEACH', 'FLAVOR-PETROL'],
   },
   {
     id: 'EXQ-GRP-032', tier: 'intermediate', category: 'GRAPES', format: 'aromaIdentification',
@@ -4047,7 +4049,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Sangiovese', 'Nero d\'Avola', 'Primitivo', 'Corvina'],
     answerIndex: 0,
     explanation: 'Sangiovese\'s sour cherry over a savoury, tomato-leaf base is what makes it such a natural partner for Tuscan food, and oak ageing adds the espresso note. Primitivo is jammy and Nero d\'Avola darker and warmer.',
-    entryRefs: ['G009', 'R021'],
+    entryRefs: ['G009', 'R021', 'FLAVOR-CHERRY', 'FLAVOR-TOMATO', 'FLAVOR-ESPRESSO'],
   },
   {
     id: 'EXQ-STY-025', tier: 'intermediate', category: 'STYLES', format: 'aromaIdentification',
@@ -4061,7 +4063,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     ],
     answerIndex: 1,
     explanation: 'Red apple and raspberry are Meunier\'s fruit signature in a Champagne blend, and brioche is autolytic character from time on the lees - which a tank-method wine like Prosecco does not develop. Two clues, one pointing at the grape and one at the method.',
-    entryRefs: ['G055', 'S009', 'S025'],
+    entryRefs: ['G055', 'S009', 'S025', 'FLAVOR-RED-APPLE', 'FLAVOR-RASPBERRY', 'FLAVOR-BRIOCHE'],
   },
   {
     id: 'EXQ-SWT-020', tier: 'beginner', category: 'SWEET_WINE', format: 'aromaIdentification',
@@ -4070,7 +4072,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     options: ['Furmint', 'Pedro Ximenez', 'Vidal', 'Moscato'],
     answerIndex: 1,
     explanation: 'Pedro Ximenez grapes are laid out in the Andalusian sun until they are raisins, giving one of the sweetest and darkest wines made anywhere - figgy, treacly and often over 400 grams per litre of sugar. Nothing else looks or tastes like it.',
-    entryRefs: ['G082', 'R035', 'S013'],
+    entryRefs: ['G082', 'R035', 'S013', 'FLAVOR-DRIED-FIG', 'FLAVOR-HONEY', 'FLAVOR-COCOA'],
   },
 
   // --- Image identification -------------------------------------------------
@@ -4176,7 +4178,7 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     axis: { from: 'Least ageing', to: 'Most ageing' },
     explanation: 'Nine months, eighteen, thirty and thirty-six respectively. Everything above the base tier belongs to Cava de Guarda Superior, which additionally requires certified organic fruit - an unusual step for a large appellation to take.',
     source: 'Consejo Regulador DO Cava, categories and types',
-    entryRefs: ['R102'],
+    entryRefs: ['R102', 'S034'],
   },
   {
     id: 'EXQ-FOR-021', tier: 'advanced', category: 'FORTIFIED', format: 'ordering',
@@ -4527,6 +4529,193 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
     source: 'Consejo Regulador DO Cava',
     entryRefs: ['S034', 'R102'],
   },
+
+  // --------------------------------------------------------------------------
+  // 0.9.51 top-up. The paper catches up with Batch B's styles (Vin Jaune,
+  // Tokaji Aszú, Marsala, Commandaria) and with the countries the atlas grew:
+  // Moldova, Armenia, Cyprus and the newly opened Turkey. Two of the additions
+  // deliberately land in the old floor cells — SWEET_WINE/advanced and
+  // HISTORY/intermediate, both sitting at 6 since 0.7.6.
+  // --------------------------------------------------------------------------
+  {
+    id: 'EXQ-STY-028', tier: 'beginner', category: 'STYLES', format: 'multipleChoice',
+    prompt: 'Vin Jaune, the Jura\'s "yellow wine", is made from which grape?',
+    options: ['Chardonnay', 'Savagnin', 'Poulsard', 'Trousseau'],
+    answerIndex: 1,
+    explanation: 'Vin Jaune is Savagnin only, aged for over six years in barrels that are never topped up while a veil of yeast protects and transforms the wine. Poulsard and Trousseau are the Jura\'s reds, and Chardonnay makes the region\'s conventional whites.',
+    entryRefs: ['S035', 'G084', 'R012'],
+  },
+  {
+    id: 'EXQ-WMK-027', tier: 'intermediate', category: 'WINEMAKING', format: 'multipleChoice',
+    prompt: 'Vin Jaune and Fino Sherry share a defining production feature. Which?',
+    options: [
+      'Fortification with grape spirit',
+      'Ageing under a film of living yeast',
+      'Deliberate heating during maturation',
+      'A second fermentation in bottle',
+    ],
+    answerIndex: 1,
+    explanation: 'Both age under a yeast veil, called voile in the Jura and flor in Jerez, which shields the wine from oxygen while feeding it the nutty, saline sotolon character. The decisive difference is that Sherry is fortified and Vin Jaune never is.',
+    entryRefs: ['S035'],
+  },
+  {
+    id: 'EXQ-STY-029', tier: 'advanced', category: 'STYLES', format: 'multipleChoice',
+    prompt: 'Vin Jaune is bottled in a 62 cl clavelin. What does that odd size commemorate?',
+    options: [
+      'A medieval Jura tax measure',
+      'What remains of a litre after six years of evaporation in cask',
+      'The volume of the original royal bottle mould',
+      'A limit set by the AOC to ration production',
+    ],
+    answerIndex: 1,
+    explanation: 'The clavelin holds what is said to survive of a litre after the legally required six years and three months under voile: the rest has gone to the angels. The story is tidy enough to be suspect, but it is the appellation\'s own telling and the bottle is legally reserved for Vin Jaune.',
+    source: 'INAO cahier des charges, Arbois and Cotes du Jura',
+    entryRefs: ['S035', 'R012'],
+  },
+  {
+    id: 'EXQ-SWT-022', tier: 'beginner', category: 'SWEET_WINE', format: 'multipleChoice',
+    prompt: 'Tokaji Aszu owes its sweetness to:',
+    options: [
+      'Grapes frozen on the vine',
+      'Botrytised berries picked one by one and steeped in base wine',
+      'Boiling the must down to a syrup',
+      'Adding grape spirit to stop fermentation',
+    ],
+    answerIndex: 1,
+    explanation: 'Aszu means the shrivelled, botrytis-affected berries, gathered individually and soaked in fermenting must or wine. Freezing describes ice wine, boiled must is the ancient sapa, and stopping fermentation with spirit is the fortified sweet route of Port and Commandaria\'s neighbours.',
+    entryRefs: ['S036', 'R049', 'G040'],
+  },
+  {
+    id: 'EXQ-SWT-023', tier: 'advanced', category: 'SWEET_WINE', format: 'multipleChoice',
+    prompt: 'Grasa de Cotnari is the honeyed heart of which country\'s historic botrytis wine?',
+    options: ['Hungary', 'Romania', 'Moldova', 'Bulgaria'],
+    answerIndex: 1,
+    explanation: 'Cotnari, on limestone hills in Romania\'s northeast, has made golden botrytis sweets since the fifteenth-century court of Stephen the Great, from Grasa de Cotnari with Feteasca Alba and Tamaioasa. The same Grasa is the parent the traditional account gives Feteasca Regala, which is why the name appears in the catalog\'s lineage notes.',
+    entryRefs: ['R154', 'G203', 'G188'],
+  },
+  {
+    id: 'EXQ-FOR-028', tier: 'beginner', category: 'FORTIFIED', format: 'multipleChoice',
+    prompt: 'Commandaria, the amber sweet wine of Cyprus, is made from which pair of grapes?',
+    options: [
+      'Xynisteri and Mavro',
+      'Assyrtiko and Agiorgitiko',
+      'Muscat and Grenache',
+      'Palomino and Pedro Ximenez',
+    ],
+    answerIndex: 0,
+    explanation: 'The white Xynisteri and black Mavro are sun-dried on mats until their sugars concentrate, then pressed and slowly fermented. Both grow ungrafted on an island phylloxera never reached, in the fourteen delimited villages on the south slopes of the Troodos.',
+    entryRefs: ['S040', 'G205', 'G206', 'R151'],
+  },
+  {
+    id: 'EXQ-HIS-021', tier: 'intermediate', category: 'HISTORY', format: 'trueFalse',
+    prompt: 'Commandaria takes its name from a Crusader commandery and is arguably the oldest named wine still in production.',
+    answer: true,
+    explanation: 'The Knights of St John ran the wine from their Grande Commanderie at Kolossi from the thirteenth century, and the sweet wine of those villages was already praised at Richard the Lionheart\'s wedding in 1191. The style has been made without interruption since, which is the basis of the "oldest named wine" claim.',
+    entryRefs: ['S040', 'R151'],
+  },
+  {
+    id: 'EXQ-FOR-029', tier: 'intermediate', category: 'FORTIFIED', format: 'multipleChoice',
+    prompt: 'Which category of Marsala must be aged at least five years and may not be sweetened at all?',
+    options: ['Fine', 'Superiore', 'Vergine', 'Rubino'],
+    answerIndex: 2,
+    explanation: 'Vergine is Marsala\'s driest and most austere face: a minimum of five years in wood and no concentrated or cooked must added, so the wine stands on fortification and age alone. Fine and Superiore are the younger tiers and may be sweetened to style.',
+    source: 'Disciplinare DOC Marsala',
+    entryRefs: ['S039', 'R024'],
+  },
+  {
+    id: 'EXQ-FOR-030', tier: 'advanced', category: 'FORTIFIED', format: 'multipleChoice',
+    prompt: 'Gold and amber Marsala are built chiefly on which Sicilian white grapes?',
+    options: [
+      'Grillo and Catarratto',
+      'Carricante and Nerello Mascalese',
+      'Trebbiano and Malvasia',
+      'Fiano and Greco',
+    ],
+    answerIndex: 0,
+    explanation: 'Grillo, bred for the Marsala trade, and the widely planted Catarratto carry the oro and ambra styles, with Inzolia permitted alongside. Ruby Marsala uses the island\'s red varieties instead, and Carricante with Nerello is Etna\'s pairing, not Marsala\'s.',
+    source: 'Disciplinare DOC Marsala',
+    entryRefs: ['S039', 'G090', 'G140'],
+  },
+  {
+    id: 'EXQ-CTY-032', tier: 'beginner', category: 'COUNTRIES', format: 'multipleChoice',
+    prompt: 'Okuzgozu and Bogazkere, blended into a classic two-grape red, are natives of which country?',
+    options: ['Greece', 'Georgia', 'Turkey', 'Lebanon'],
+    answerIndex: 2,
+    explanation: 'Both come from eastern Anatolia: bright, cherried Okuzgozu from Elazig above the Euphrates and ferociously tannic Bogazkere from Diyarbakir. Blended, they are Turkey\'s answer to the idea that structure and drinkability must come from different bottles.',
+    entryRefs: ['G219', 'G220', 'R157'],
+  },
+  {
+    id: 'EXQ-CTY-033', tier: 'intermediate', category: 'COUNTRIES', format: 'multipleChoice',
+    prompt: 'The largest wine cellars in existence, with galleries running for hundreds of kilometres, are in:',
+    options: ['France', 'Georgia', 'Moldova', 'Spain'],
+    answerIndex: 2,
+    explanation: 'Milestii Mici and Cricova tunnel through old limestone mines outside Chisinau, storing millions of bottles along named underground streets. Moldova also has more vineyard per person than any other country, a legacy of its role as the Soviet Union\'s vineyard.',
+    entryRefs: ['R147'],
+  },
+  {
+    id: 'EXQ-CTY-034', tier: 'beginner', category: 'COUNTRIES', format: 'multipleChoice',
+    prompt: 'The world\'s oldest known winery, some 6,100 years old, was found in a cave in:',
+    options: ['Georgia', 'Armenia', 'Greece', 'Lebanon'],
+    answerIndex: 1,
+    explanation: 'The Areni-1 cave in Vayots Dzor held a complete winery: press, fermentation vats and jars. Georgia holds the older chemical evidence of wine itself, which is why the two countries share the deep-history story without contradiction, and the Areni grape still grows around the cave.',
+    entryRefs: ['G201', 'R149'],
+  },
+  {
+    id: 'EXQ-GRP-038', tier: 'intermediate', category: 'GRAPES', format: 'multipleChoice',
+    prompt: 'Marquette, bred to survive Upper Midwest winters, has which famous variety one generation behind it?',
+    options: ['Cabernet Sauvignon', 'Pinot Noir', 'Syrah', 'Riesling'],
+    answerIndex: 1,
+    explanation: 'Marquette is a French-American hybrid released by the University of Minnesota in 2006, and one of its parents is a Pinot Noir seedling. The result is a cold-hardy red with a little of its grandparent\'s cherry elegance, in places where vinifera itself cannot survive the winter.',
+    entryRefs: ['G209'],
+  },
+  {
+    id: 'EXQ-GRP-039', tier: 'intermediate', category: 'GRAPES', format: 'multipleChoice',
+    prompt: 'Sweet Jurancon from Petit Manseng is concentrated by:',
+    options: [
+      'Noble rot on the vine',
+      'Drying the berries on the vine in the autumn wind',
+      'Freezing the grapes before pressing',
+      'Adding spirit during fermentation',
+    ],
+    answerIndex: 1,
+    explanation: 'Passerillage: the small, thick-skinned berries hang into November while the Pyrenean foehn shrivels them, concentrating sugar without botrytis. That keeps Jurancon\'s acidity electric where rot-derived sweets turn honeyed, and it is the reason the wines age so well.',
+    entryRefs: ['G218', 'R155'],
+  },
+  {
+    id: 'EXQ-REG-035', tier: 'beginner', category: 'REGIONS', format: 'multipleChoice',
+    prompt: 'Cappadocia\'s vineyards grow ungrafted on their own roots because:',
+    options: [
+      'Turkish law forbids grafting',
+      'The volcanic soil and dry cold kept phylloxera away',
+      'The vines are too young to need rootstocks',
+      'Grafted vines cannot survive at altitude',
+    ],
+    answerIndex: 1,
+    explanation: 'The high tuff plateau never suffered the phylloxera collapse, so Emir and its neighbours still grow own-rooted, as Cypriot and some Greek island vineyards do. The same soft volcanic rock gives the region its carved cave cellars.',
+    entryRefs: ['R156', 'G222'],
+  },
+  {
+    id: 'EXQ-REG-036', tier: 'advanced', category: 'REGIONS', format: 'multipleChoice',
+    prompt: 'In Styria, the local name Morillon refers to which variety?',
+    options: ['Chardonnay', 'Sauvignon Blanc', 'Welschriesling', 'Pinot Blanc'],
+    answerIndex: 0,
+    explanation: 'Styrian growers have called Chardonnay Morillon since the nineteenth century, and the name survives on labels inside the region\'s three DACs, in force since the 2018 vintage. Sauvignon Blanc is the region\'s flagship but travels under its own name.',
+    source: 'Osterreich Wein Marketing, Steiermark DAC regulations',
+    entryRefs: ['R153', 'G003'],
+  },
+  {
+    id: 'EXQ-STY-030', tier: 'beginner', category: 'STYLES', format: 'multipleChoice',
+    prompt: 'Vinho Verde, as a style, is best described as:',
+    options: [
+      'Light, crisp and often faintly spritzy, made to be drunk young',
+      'A rich, oak-aged red built for decades in the cellar',
+      'A fortified wine heated in warm lodges',
+      'A sweet wine from grapes dried on straw mats',
+    ],
+    answerIndex: 0,
+    explanation: 'The green in the name means young, not the colour of the wine. Vinho Verde from Portugal\'s rainy northwest is bottled early - low in alcohol, high in acidity, often with a light prickle of gas - though single-variety Alvarinho from its northern reaches shows how serious the style can get.',
+    entryRefs: ['S041', 'R037'],
+  },
 ];
 
 // ============================================================================
@@ -4539,9 +4728,9 @@ export const EXAM_QUESTIONS: ExamQuestion[] = [
  * update it deliberately when questions are added.
  */
 export const EXAM_AUTHORED_TIER_COUNTS: Record<ExamTier, number> = {
-  beginner: 144,
-  intermediate: 151,
-  advanced: 125,
+  beginner: 151,
+  intermediate: 157,
+  advanced: 129,
 };
 
 /**
@@ -4557,6 +4746,12 @@ export const EXAM_AUTHORED_TIER_COUNTS: Record<ExamTier, number> = {
  * sourcing rather than on ideas — Sauternes and BA/TBA must weights, and New
  * World wine history — and padding either to move this constant would buy an
  * exam nothing. See data-review/CANDIDATES.md.
+ *
+ * **7 since the 0.9.51 top-up.** The batch put one sourced question into each
+ * of the two last floor cells (Cotnari's Grasă into SWEET_WINE/advanced,
+ * Commandaria's commandery into HISTORY/intermediate), and with both lifted no
+ * cell in the 16x3 grid holds fewer than 7 — verified against the generated
+ * bank, not assumed. A balanced paper may now draw one more per category.
  */
-export const EXAM_MIN_CELL_COUNT = 6;
+export const EXAM_MIN_CELL_COUNT = 7;
 

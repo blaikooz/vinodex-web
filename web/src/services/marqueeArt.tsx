@@ -93,9 +93,11 @@ export const MARQUEE_ART: Record<string, string> = {
   'SECTOR SELECT': 'marquee-continentscan',
   'TACTILE VIEW': 'marquee-globescan',
   'BIODYNAMIC SCAN': 'marquee-moondial',
-  'PROF. VINO': 'marquee-vinodex',
-  'SUPPORT': 'marquee-notifications',
-  'YOU MIGHT LIKE': 'marquee-encyclopedia',
+  // iOS drew dedicated panels for these three in the 0.9.44-0.9.53 art
+  // pass; they had been borrowing generic ones. (2026-09-09)
+  'PROF. VINO': 'marquee-profvino',
+  'SUPPORT': 'marquee-support',
+  'YOU MIGHT LIKE': 'marquee-suggestions',
   'DEMO MODE': 'marquee-demo',
   'PROFILES': 'marquee-user',
   'HAPTICS': 'marquee-haptics',
