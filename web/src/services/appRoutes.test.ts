@@ -5,6 +5,7 @@ import {
   DEX_PREFIXES,
   SITE_EXACT,
   SITE_PREFIXES,
+  browserIcon,
   browserTitle,
   bootDecision,
   isDexPath,
@@ -166,6 +167,30 @@ describe('the boot decision', () => {
     expect(bootDecision('/detail/G001', '/detail/G002')).toBe(false);
     expect(bootDecision('/detail/G001', '/list/GRAPES')).toBe(false);
     expect(bootDecision('/settings', '/settings/DATA')).toBe(false);
+  });
+
+  it('flies each product its own mark, by the same rule that names the tab', () => {
+    // The icon and the title must never disagree about which product you are
+    // looking at, which is why both read `isDexPath`.
+    for (const p of ['/', '/apps', '/who-we-are', '/contact', '/privacy']) {
+      expect(browserIcon(p), p).toBe('/horizon-godot-logo.png');
+      expect(browserTitle(p), p).toBe('HORIZON/GODOT');
+    }
+    for (const p of ['/dex', '/detail/G001', '/entry/G001', '/settings', '/firmware']) {
+      expect(browserIcon(p), p).toBe('/vinodex-logo.png');
+      expect(browserTitle(p), p).toBe('VINODEX');
+    }
+  });
+
+  it('treats the iOS share alias as the share surface it aliases', () => {
+    // `/entry/<id>` redirects to `/detail/<id>`; a cold arrival must not boot
+    // on the way through, and must not wear the studio's chrome for a frame.
+    expect(isSharePath('/entry/G001')).toBe(true);
+    expect(bootDecision(null, '/entry/G001')).toBe(false);
+    expect(bootDecision(null, '/detail/G001')).toBe(false);
+    // Still a real dex path, so leaving it for the menu boots as usual.
+    expect(bootDecision('/entry/G001', '/dex')).toBe(false);
+    expect(bootDecision('/', '/dex')).toBe(true);
   });
 
   it('boots again when a deep-link visitor leaves and comes back', () => {

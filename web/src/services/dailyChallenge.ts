@@ -108,7 +108,7 @@ export const dayLabel = (day: number): string => new Date(day * 24 * 60 * 60 * 1
  * score, a tile per question -- right or wrong, never which answer -- and
  * where to sit the same paper. Shown on the done card with COPY and SHARE.
  */
-export function dailyResultString(day: number, marks: readonly boolean[], passMark: number, url = 'vinodex.vercel.app/daily-challenge'): string {
+export function dailyResultString(day: number, marks: readonly boolean[], passMark: number, url = 'horizongodot.com/daily-challenge'): string {
   const right = marks.filter(Boolean).length;
   const verdict = right >= passMark ? 'PASS' : 'FAIL';
   const tiles = marks.map(m => (m ? '🟩' : '🟥')).join('');

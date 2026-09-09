@@ -30,8 +30,16 @@ import { SITE_EXACT } from './appRoutes';
  *   off to Substack; the publication is the page worth ranking.
  */
 
-/** The production origin, shared with `shareLink.ts`'s `SHARE_BASE`. */
-export const SITE_ORIGIN = 'https://vinodex.vercel.app';
+/**
+ * The production origin, shared with `shareLink.ts`'s `SHARE_BASE`.
+ *
+ * Moved to the custom domain 2026-09-09 (owner ruling). vinodex.vercel.app
+ * still serves the same app and every link minted against it still works --
+ * including the `/entry/<id>` URLs already in the wild from iOS share sheets
+ * -- but canonical, og:url and the sitemap now name the domain the studio
+ * actually owns, so ranking consolidates there instead of on the host's.
+ */
+export const SITE_ORIGIN = 'https://www.horizongodot.com';
 
 export interface SitePage {
   /** The route, exactly as `SITE_EXACT` spells it. */
@@ -223,6 +231,14 @@ export const injectMeta = (shell: string, meta: PageMeta): string => {
   set('name', 'twitter:title', meta.title);
   set('name', 'twitter:description', desc);
   set('name', 'twitter:image', meta.image ?? SHARE_IMAGE);
+  // The tab icon names the same product the title does (2026-09-09), and is
+  // derived from `browserTitle` rather than carried as its own field so the
+  // two cannot disagree about which product a page belongs to. A cold load or
+  // a crawler gets the right mark from the HTML; `browserIcon` in appRoutes
+  // keeps it right as the SPA navigates.
+  const icon = meta.browserTitle === 'VINODEX' ? '/vinodex-logo.png' : '/horizon-godot-logo.png';
+  html = html.replace(/(<link rel="icon"[^>]*href=")[^"]*(")/, `$1${icon}$2`);
+  html = html.replace(/(<link rel="apple-touch-icon"[^>]*href=")[^"]*(")/, `$1${icon}$2`);
   // The tag and its own line, so re-injecting a page yields the same bytes.
   html = html.replace(/[ \t]*<link rel="canonical"[^>]*>\r?\n?/g, '');
   html = html.replace('</head>', `    <link rel="canonical" href="${htmlEsc(meta.url)}" />\n  </head>`);

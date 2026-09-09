@@ -11,8 +11,10 @@
 // boot into the app (same hashed bundle) at the right route.
 //
 // Two kinds of page, one mechanism:
-//   - the 440 shareable catalogue entries at /detail/<id> (since v0.6.1) —
-//     entry ids match the iOS app's, so a card shared from iOS resolves here;
+//   - the shareable catalogue entries at /detail/<id> (since v0.6.1), and the
+//     same pages mirrored at /entry/<id> (since v0.6.62) because that is the
+//     URL the iOS share sheet mints — entry ids match the iOS app's, so a card
+//     shared from iOS resolves here;
 //   - the site's own pages at /apps, /who-we-are, /contact, /privacy (since
 //     v0.6.15), plus the landing's tags rewritten into the shell itself.
 //
@@ -58,7 +60,15 @@ const entryIds: string[] = [];
 for (const e of buildWineEntries()) {
   if (!SHAREABLE_CATEGORIES.has(e.category)) continue;
   entryIds.push(e.id);
-  writePage(`/detail/${e.id}`, injectMeta(shell, entryPageMeta(e.id, e.name, e.description, e.id in cards)));
+  const entryHtml = injectMeta(shell, entryPageMeta(e.id, e.name, e.description, e.id in cards));
+  writePage(`/detail/${e.id}`, entryHtml);
+  // The same page at the alias iOS share sheets mint (2026-09-09). Byte for
+  // byte the same HTML, which means the same unfurl card AND the same
+  // canonical link -- pointing at /detail/<id> -- so a crawler consolidates
+  // the two URLs instead of seeing duplicate pages. Real visitors are
+  // redirected by the router; only crawlers and cold loads read this file.
+  // Deliberately absent from the sitemap for the same reason.
+  writePage(`/entry/${e.id}`, entryHtml);
 }
 
 // The site's pages. The landing IS the shell, so its tags are written into

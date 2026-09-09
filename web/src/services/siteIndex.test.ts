@@ -179,6 +179,18 @@ describe('the site index', () => {
       expect((html.match(/name="twitter:image:alt"/g) ?? []).length).toBe(1);
     });
 
+    it('gives each product page its own tab icon', () => {
+      // A cold load or a crawler reads the mark out of the HTML, before any
+      // JavaScript runs; `browserIcon` keeps it right as the SPA navigates.
+      const site = injectMeta(shell, sitePageMeta(SITE_PAGES[1]!));
+      expect(site).toContain('href="/horizon-godot-logo.png"');
+      expect(site).not.toContain('href="/vinodex-logo.png"');
+
+      const entry = injectMeta(shell, entryPageMeta('G001', 'Cabernet Sauvignon', 'A red grape'));
+      expect(entry).toContain('href="/vinodex-logo.png"');
+      expect(entry).not.toContain('href="/horizon-godot-logo.png"');
+    });
+
     it('is idempotent: injecting twice yields the same page', () => {
       const once = injectMeta(shell, sitePageMeta(SITE_PAGES[1]!));
       expect(injectMeta(once, sitePageMeta(SITE_PAGES[1]!))).toBe(once);

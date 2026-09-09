@@ -188,6 +188,35 @@ test('the BIOS runs again the second time you open the app', async ({ page, cons
  * second half checks: opening a related screen from there is in-app
  * navigation.
  */
+/**
+ * The iOS share sheet mints `/entry/<id>`; the web has always served the page
+ * at `/detail/<id>` (2026-09-09). The alias must land on the entry, keep the
+ * canonical URL, and -- like the surface it aliases -- not power-cycle the
+ * device in front of a stranger who tapped a link.
+ */
+test('the iOS share alias lands on the entry without booting', async ({ page, consoleErrors }) => {
+  void consoleErrors;
+  await seedDevice(page);
+  const post = page.getByText(/VINODEX BIOS/);
+
+  await page.goto('/entry/G001');
+  await page.waitForTimeout(900);
+  await expect(post).toHaveCount(0);
+  // Redirected to the canonical URL, and showing the entry.
+  await expect(page).toHaveURL(/\/detail\/G001$/);
+  await expect(page.getByText('Cabernet Sauvignon')).toBeVisible();
+
+  // A few more ids, and a bogus one, which lands home rather than on a blank.
+  for (const id of ['R003', 'S015']) {
+    await page.goto(`/entry/${id}`);
+    await page.waitForTimeout(700);
+    await expect(page).toHaveURL(new RegExp(`/detail/${id}$`));
+  }
+  await page.goto('/entry/ZZZZ');
+  await page.waitForTimeout(900);
+  await expect(page).toHaveURL(/\/dex$/);
+});
+
 test('a shared entry link does not boot the device', async ({ page, consoleErrors }) => {
     void consoleErrors;
   // **Deliberately not seeded past the professor** (v8#11). Arriving at a grape

@@ -68,6 +68,18 @@ export interface WebRelease {
 // 0.6.1x, not 0.6.2: the firmware line owns 0.6.2 through 0.9.2, and the
 // two-clocks test refuses any version the device already wore.
 const CURRENT: WebRelease = {
+  version: '0.6.62',
+  date: '2026-09-09',
+  headline: 'LINKS THAT LAND',
+  notes: [
+    'A wine shared from the iPhone opens on the web now. The share sheet mints one address and the site served the page at another; the two are joined, and the link lands on the entry without the device powering on in front of a stranger.',
+    'The tab tells you which product you are in: the studio site flies the Horizon/Godot mark, the encyclopedia flies Vinodex\'s - and a shared wine link unfurls and pins as Vinodex, because that is what it is about.',
+    'And the site names its own domain now. Every canonical link, share card and sitemap row says horizongodot.com; every address already in the wild still works.',
+  ],
+};
+
+/** The release before this one, promoted when 0.6.62 landed. */
+const PREVIOUS_0_6_61: WebRelease = {
   version: '0.6.61',
   date: '2026-09-09',
   headline: 'EIGHTY-FOUR MORE',
@@ -754,6 +766,7 @@ const PREVIOUS_0_4_2: WebRelease = {
 
 /** Newest first. A new release is prepended by promoting `CURRENT`. */
 const PREVIOUS: WebRelease[] = [
+  PREVIOUS_0_6_61,
   PREVIOUS_0_6_60,
   PREVIOUS_0_6_59,
   PREVIOUS_0_6_58,

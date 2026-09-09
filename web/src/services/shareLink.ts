@@ -6,11 +6,12 @@
  * iOS and web share the same entry ids (G001 / R001 / S001 / FLAVOR-* / CONT_*),
  * and the web serves them at `/detail/:id`, so a card shared from the iOS app
  * that targets `${SHARE_BASE}/detail/<id>` lands on the matching web entry with
- * no mapping table. Keep `SHARE_BASE` in step with the production domain.
+ * no mapping table. Keep `SHARE_BASE` in step with `siteIndex.ts`'s SITE_ORIGIN, which is the
+ * canonical domain (horizongodot.com since 2026-09-09).
  */
 
 /** Canonical production origin for shared links (no trailing slash). */
-export const SHARE_BASE = 'https://vinodex.vercel.app';
+export const SHARE_BASE = 'https://www.horizongodot.com';
 
 /**
  * App Store listing the install nudge points at. Placeholder until the listing

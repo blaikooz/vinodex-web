@@ -45,6 +45,10 @@ export const SITE_PREFIXES: readonly string[] = ['/project', '/website'];
 export const DEX_PREFIXES: readonly string[] = [
   '/dex',
   '/detail',
+  // The alias iOS share sheets mint (2026-09-09). It redirects to `/detail`
+  // and is listed here so the beat before that redirect wears the app's
+  // title, icon and no-boot rule rather than the studio site's.
+  '/entry',
   '/list',
   '/lineage',
   '/settings',
@@ -79,6 +83,16 @@ export const DEX_PREFIXES: readonly string[] = [
  */
 export const SHARE_PREFIX = '/detail';
 
+/**
+ * The share surface's alias, minted by the iOS share sheet.
+ *
+ * Counted as a share path so a cold arrival does not boot the device on its
+ * way through the redirect: the visitor followed a link to an entry, and the
+ * BIOS playing for one frame before the page swaps is exactly the jolt
+ * `bootDecision` exists to prevent.
+ */
+export const SHARE_ALIAS_PREFIX = '/entry';
+
 /** `prefix`, or anything under it — never a mere string prefix, so `/dexter`
  *  is not `/dex` and `/settings-old` is not `/settings`. */
 const owns = (prefix: string, path: string): boolean =>
@@ -95,8 +109,24 @@ export const isDexPath = (path: string): boolean => DEX_PREFIXES.some(p => owns(
 export const browserTitle = (path: string): 'HORIZON/GODOT' | 'VINODEX' =>
   isDexPath(path) ? 'VINODEX' : 'HORIZON/GODOT';
 
+/**
+ * The tab's icon, which names the same product the title does.
+ *
+ * Deliberately keyed off `isDexPath` rather than a second rule of its own: the
+ * icon and the title disagreeing about which product you are looking at is the
+ * whole failure this replaces, and one shared predicate cannot drift. The
+ * studio site flies the Horizon/Godot mark; the encyclopedia flies Vinodex's
+ * (owner ask, 2026-09-09).
+ *
+ * `/detail/:id` is a dex path, so a shared entry link unfurls and pins as
+ * Vinodex, which is the product the link is actually about.
+ */
+export const browserIcon = (path: string): string =>
+  isDexPath(path) ? '/vinodex-logo.png' : '/horizon-godot-logo.png';
+
 /** A shared entry page. */
-export const isSharePath = (path: string): boolean => owns(SHARE_PREFIX, path);
+export const isSharePath = (path: string): boolean =>
+  owns(SHARE_PREFIX, path) || owns(SHARE_ALIAS_PREFIX, path);
 
 /**
  * Does arriving at `to` from `from` boot the device?

@@ -44,7 +44,7 @@ import VinoIntroCard from './components/VinoIntroCard';
 import CoachmarkOverlay from './components/CoachmarkOverlay';
 import { IDLE_ACTIVITY_EVENTS, IDLE_SCREENSAVER_SECONDS } from './src/services/screensaver';
 import { ScreensaverProvider } from './components/ScreensaverOverlay';
-import { bootDecision, browserTitle, isDexPath, isSitePath } from './src/services/appRoutes';
+import { bootDecision, browserIcon, browserTitle, isDexPath, isSitePath } from './src/services/appRoutes';
 import { trackEvent } from './src/services/analytics';
 import { variantTag } from './src/services/experiment';
 import { IosUpdatesPromptProvider } from './components/IosUpdatesPrompt';
@@ -291,6 +291,24 @@ const LegacyProjectRedirect: React.FC = () => {
   return <Navigate to={`/project/${id ?? ''}`} replace />;
 };
 
+/**
+ * `/entry/:id` — the URL iOS share sheets mint.
+ *
+ * The web already had this page at `/detail/:id`, with 524 prerendered unfurl
+ * cards, sitemap rows and a canonical link pointing at it, so the fix is an
+ * alias rather than a second implementation: one page, one canonical URL, no
+ * duplicate content for a crawler to choose between. `DetailRoute` sends an
+ * id that matches nothing to `/dex`, so a bogus `/entry/ZZZZ` lands home the
+ * same way `/detail/ZZZZ` does. The static `dist/entry/<id>/index.html`
+ * pages `prerender-og.ts` writes carry this page's own card and a canonical
+ * pointing back at `/detail/<id>`, so an iOS-shared link unfurls correctly
+ * even though the visitor is redirected. (2026-09-09)
+ */
+const EntryAliasRedirect: React.FC = () => {
+  const { entryId } = useParams<{ entryId: string }>();
+  return <Navigate to={`/detail/${entryId ?? ''}`} replace />;
+};
+
 
 /** A referentially stable empty catalogue for the site side of the fork. */
 const NO_ENTRIES: WineEntry[] = [];
@@ -306,6 +324,15 @@ const App: React.FC = () => {
 
   useEffect(() => {
     document.title = browserTitle(location.pathname);
+    // The tab's icon follows its title (2026-09-09): the studio site flies the
+    // Horizon/Godot mark, the encyclopedia flies Vinodex's. The <link> is the
+    // one index.html ships rather than a second element, so there is never a
+    // moment with two icons declared and the browser choosing.
+    const icon = browserIcon(location.pathname);
+    for (const rel of ['icon', 'apple-touch-icon']) {
+      const el = document.head.querySelector<HTMLLinkElement>(`link[rel="${rel}"]`);
+      if (el && el.getAttribute('href') !== icon) el.setAttribute('href', icon);
+    }
   }, [location.pathname]);
 
   /*
@@ -763,6 +790,11 @@ const App: React.FC = () => {
         <Route path="/website/who-we-are" element={<Navigate to="/who-we-are" replace />} />
         <Route path="/website/contact" element={<Navigate to="/contact" replace />} />
         <Route path="/website/unlock" element={<Navigate to="/dex" replace />} />
+
+        {/* Outside the catalogue gate on purpose: a redirect needs no data,
+            and inside it a cold `/entry/<id>` arrival would fall through to
+            the site 404 for the beat the tables take to load. */}
+        <Route path="/entry/:entryId" element={<EntryAliasRedirect />} />
 
         {/* Every dex route waits for the catalogue chunk (v0.6.31). On a cold
             arrival the BIOS boot is running in front of this anyway; the one
